@@ -12,3 +12,11 @@ Their virtues transcend boundaries.
 Rooted in the wisdom of ages,  
 East and West, ancient and modern,  
 Echoing the eternal Tao.
+<br>
+<br>
+
+### Founding Board Members:
+- Dr. Kelly Bender 
+- Brianne Bear
+- Dr. Matt Markert
+- Adam M. Goyer
