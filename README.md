@@ -1,4 +1,4 @@
-# Lotus Oak Foundation for Human Thriving
+# Lotus Oak Foundation for Human Thriving 🌸🌳
 
 The oak stands firm,  
 While the lotus blooms—it swiftly fades.
