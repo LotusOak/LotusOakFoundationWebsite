@@ -14,6 +14,9 @@ East and West, ancient and modern,
 Echoing the eternal Tao.
 <br>
 <br>
+## Our Ethos
+We blend traditional philanthropy with innovative social venture approaches, enabling projects in education, healthcare, environmental conservation, and other crucial impact areas to flourish. Our core mission is to address systemic challenges through collaboration, research-based solutions, and responsible stewardship of resources, ensuring the greatest possible impact on community well-being.
+
 
 ### Founding Board Members:
 - Dr. Kelly Bender 
