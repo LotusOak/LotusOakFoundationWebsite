@@ -54,6 +54,14 @@ We envision a world where:
    - Technology-enabled solutions
    - Creative funding models
 
+## Future Proof
+
+As we grow, we continue to explore new models for collective stewardship and long-term impact. One such initiative—still in early development—is the Dryad Protocol. This project may evolve into a membership-based organization or decentralized autonomous organization (DAO), designed to align global capital with biosphere restoration, cultural resilience, and AI alignment.
+
+Dryad Protocol represents our intention to steward not only resources, but also shared values—protecting what is sacred through systems that are transparent, participatory, and adaptive.
+
+While the specifics are still evolving, we believe that blending regenerative finance with decentralized governance models may unlock new levels of accountability and effectiveness in the philanthropic and impact investment space.
+
 ## Join Us in Our Mission
 
-Learn more about [how you can get involved](/how-it-works) or [contact us](/contact) to discuss partnership opportunities. 
+Learn more about [how you can get involved](/how-it-works) or [contact us](/contact) to discuss partnership opportunities.

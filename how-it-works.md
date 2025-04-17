@@ -3,78 +3,24 @@ layout: page
 title: How It Works
 ---
 
-# How It Works: Your Guide to Philanthropic Giving
+At the Lotus Oak Foundation, we take a highly personalized approach to donor engagement and philanthropic strategy. Rather than relying on standardized online tools or automated portals, we work directly with each donor to align their values with high-impact giving and regenerative investment opportunities.
 
-## Step 1: Open Your DAF
+Our process is bespoke and deeply relational:
 
-### Initial Contribution
-- Choose your contribution amount
-- Select your investment strategy
-- Complete the application process
+## Step 1: Discovery & Alignment
 
-### Required Documentation
-- Personal identification
-- Funding source verification
-- Investment preferences
+We begin with thoughtful conversation. Our team explores your values, priorities, and vision for impact. This may include a blend of education, co-reflection, and mission clarification.
 
-## Step 2: Fund Your DAF
+## Step 2: Strategic Investment Stewardship
 
-### Contribution Options
-- Cash contributions
-- Appreciated securities
-- Real estate
-- Other qualified assets
+Once assets are contributed to the foundation, our Chief Investment Officer works directly with the donor to guide allocation toward long-term, mission-aligned portfolios. We manage investments in accordance with our regenerative, ethical, and strategic philosophy.
 
-### Tax Benefits
-- Immediate tax deduction
-- Avoidance of capital gains tax
-- Estate planning advantages
+## Step 3: Collaborative Grantmaking
 
-## Step 3: Invest Your Funds
+Our philanthropy advisors support you in identifying, negotiating, and administering high-impact grants. We work behind the scenes to ensure compliance, optimize timing, and connect your capital to the causes that matter most.
 
-### Portfolio Management
-- Professional oversight
-- Regular rebalancing
-- Performance monitoring
+## Step 4: Ongoing Partnership
 
-## Step 4: Recommend Grants
+You’ll receive regular narrative updates, optional impact briefings, and personal engagement from our team. Our aim is to serve as a steward and partner in your journey—not just a service provider.
 
-### Grant Making Process
-1. Log in to your donor portal
-2. Select recipient organization
-3. Specify grant amount
-4. Submit recommendation
-
-### Grant Guidelines
-- Minimum grant amount: $250
-- Qualified charitable organizations
-- No administrative fees for grants
-
-## Step 5: Track Your Impact
-
-### Reporting
-- Quarterly statements
-- Annual tax documentation
-- Impact reports
-
-### Online Tools
-- Donor portal access
-- Grant history
-- Investment performance
-
-## Frequently Asked Questions
-
-### How quickly can I make grants?
-Grants are typically processed within 5-7 business days of recommendation.
-
-### Can I involve my family?
-Yes! You can name successor advisors and involve family members in grant recommendations.
-
-### What are the fees?
-Our fee structure is transparent and competitive. [Contact us](/contact) for specific details.
-
-## Ready to Get Started?
-
-1. Review our [investment options](/investment-options)
-2. Learn about [accepted assets](/accepted-assets)
-3. [Contact us](/contact) to begin your philanthropic journey 
+If you're interested in working together, [contact us to start the conversation »](/contact).

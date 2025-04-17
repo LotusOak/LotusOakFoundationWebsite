@@ -3,59 +3,37 @@ layout: page
 title: Donor Advised Funds Explained
 ---
 
-# Donor Advised Funds: A Modern Approach to Philanthropy
+# Donor Advised Funds: A Flexible Tool for Intentional Giving
+
+At the Lotus Oak Foundation, we use Donor Advised Funds (DAFs) as a flexible structure to support values-driven philanthropy. While the concept of a DAF is often associated with large financial institutions, our approach is deeply personal, guided, and mission-aligned.
 
 ## What is a Donor Advised Fund?
 
-A Donor Advised Fund (DAF) is a philanthropic vehicle that allows donors to make charitable contributions, receive immediate tax benefits, and then recommend grants to qualified charities over time. Think of it as a charitable investment account for your philanthropic dollars.
+A Donor Advised Fund is a giving account established at a public charity. Donors contribute assets, receive an immediate tax deduction, and retain advisory privileges over how grants are recommended—while the foundation manages the investments and final disbursements.
 
-## How DAFs Work
+## How We Use DAFs at Lotus Oak
 
-1. **Contribution**
-   - Make an irrevocable contribution to your DAF
-   - Receive an immediate tax deduction
-   - Your contribution grows tax-free
+Unlike commercial DAF platforms, we take a relational, high-touch approach:
 
-2. **Investment**
-   - Your funds are professionally managed
-   - Choose from various investment strategies
-   - Watch your charitable dollars grow
+- We begin with meaningful dialogue to understand your vision and goals.
+- Our CIO personally oversees the investment strategy to align with your intentions.
+- Our advisors work collaboratively with you to identify and support outstanding nonprofit projects.
+- We handle administration, due diligence, and compliance—so you can focus on impact.
 
-3. **Granting**
-   - Recommend grants to qualified charities
-   - Support causes you care about
-   - Make grants on your own timeline
+## Key Benefits
 
-## Benefits of a DAF
+- **Tax-Efficient Giving**  
+  Contribute appreciated assets, receive an immediate deduction, and avoid capital gains.
 
-- **Tax Efficiency**
-  - Immediate tax deduction
-  - No capital gains tax on appreciated assets
-  - Tax-free growth of investments
+- **Strategic Stewardship**  
+  Your funds are invested in alignment with regenerative and ethical principles.
 
-- **Flexibility**
-  - Contribute when it's most tax-efficient
-  - Grant when you're ready
-  - Support multiple charities
+- **Bespoke Grantmaking**  
+  Work alongside our team to co-create meaningful, mission-aligned grants.
 
-- **Simplicity**
-  - One receipt for all contributions
-  - Streamlined record-keeping
-  - Professional management
-
-## Why Choose Lotus Oak Foundation?
-
-Our DAF program stands out because:
-- Personalized investment strategies
-- Expert philanthropic guidance
-- Transparent fee structure
-- Commitment to impact
+- **Long-Term Partnership**  
+  We’re here for the full arc of your giving journey—from inspiration to implementation.
 
 ## Getting Started
 
-1. Open your DAF with a minimum contribution
-2. Choose your investment strategy
-3. Start recommending grants
-4. Watch your impact grow
-
-[Learn more about our investment options](/investment-options) or [contact us](/contact) to discuss opening a DAF. 
+We work with individuals, families, and mission-aligned institutions. To explore whether a DAF with Lotus Oak is right for you, [contact us to schedule a conversation »](/contact).

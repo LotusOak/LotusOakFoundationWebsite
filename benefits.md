@@ -3,98 +3,29 @@ layout: page
 title: Benefits
 ---
 
-# Benefits: Maximizing Your Philanthropic Impact
+# Benefits of Partnering with Lotus Oak
 
-## Tax Advantages
+Working with the Lotus Oak Foundation means more than tax efficiency—it means aligning your giving with your deepest values in a way that is strategic, relational, and regenerative.
 
-### Immediate Tax Benefits
-- **Income Tax Deduction**
-  - Up to 60% of AGI for cash contributions
-  - Up to 30% of AGI for appreciated securities
-  - Five-year carryforward for excess contributions
+## Why Donors Choose Us
 
-- **Capital Gains Tax Avoidance**
-  - No capital gains tax on appreciated assets
-  - Full fair market value deduction
-  - Enhanced tax efficiency
+- **Bespoke Guidance**  
+  Every relationship begins with conversation. We co-design your giving approach based on what matters most to you.
 
-### Estate Planning Benefits
-- **Estate Tax Reduction**
-  - Removal of assets from taxable estate
-  - Generation-skipping transfer tax benefits
-  - Legacy planning opportunities
+- **Mission-Aligned Investing**  
+  Your contributed assets are stewarded by our in-house CIO through a regenerative investment lens.
 
-- **Wealth Transfer**
-  - Multi-generational giving
-  - Family philanthropy education
-  - Successor advisor options
+- **Amplified Impact**  
+  Our team helps craft, negotiate, and deliver high-leverage grants that drive systemic change.
 
-## Philanthropic Advantages
+- **White-Glove Administration**  
+  We handle the complexity—vetting, documentation, compliance—so you can focus on your vision.
 
-### Strategic Giving
-- **Timing Flexibility**
-  - Contribute when tax-efficient
-  - Grant when ready
-  - Multi-year planning
-
-- **Asset Management**
-  - Professional investment oversight
-  - Tax-free growth
-  - Impact-focused strategies
-
-### Administrative Benefits
-- **Simplified Record-Keeping**
-  - Single tax receipt
-  - Consolidated reporting
-  - Streamlined documentation
-
-- **Grant Management**
-  - Easy online granting
-  - No check writing
-  - Automatic record-keeping
-
-## Impact Benefits
-
-### Community Engagement
-- **Local Impact**
-  - Support for community organizations
-  - Regional development
-  - Grassroots initiatives
-
-- **Global Reach**
-  - International giving capabilities
-  - Cross-border philanthropy
-  - Global impact measurement
-
-### Legacy Building
-- **Family Involvement**
-  - Multi-generational participation
-  - Values transmission
-  - Philanthropic education
-
-- **Community Leadership**
-  - Recognition opportunities
-  - Partnership development
-  - Thought leadership
-
-## Comparing Giving Options
-
-### DAF vs. Private Foundation
-- Lower administrative burden
-- No excise taxes
-- Simpler compliance
-- Immediate tax benefits
-
-### DAF vs. Direct Giving
-- Tax efficiency
-- Investment growth
-- Strategic planning
-- Administrative support
+- **Legacy & Stewardship**  
+  We support long-term planning, family involvement, and the cultivation of living values across generations.
 
 ## Getting Started
 
-1. Review our [investment options](/investment-options)
-2. Learn about [accepted assets](/accepted-assets)
-3. [Contact us](/contact) to discuss your specific situation
+If you're ready to explore aligned giving through Lotus Oak, [reach out to begin the conversation »](/contact)
 
-*This information is for educational purposes only and should not be considered tax or legal advice. Please consult your tax advisor for specific guidance.* 
+_This information is for educational purposes only and should not be considered tax or legal advice. Please consult your tax advisor for specific guidance._

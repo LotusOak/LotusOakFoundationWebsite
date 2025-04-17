@@ -3,107 +3,18 @@ layout: page
 title: Accepted Assets
 ---
 
-# Accepted Assets: Flexible Giving Options
+# Accepted Assets
 
-## Cash Contributions
+We welcome a variety of contributions, including cash, publicly traded securities, private assets, and nontraditional gifts. Each donation is evaluated on a case-by-case basis to ensure alignment with our mission and compliance requirements.
 
-### Features
-- Most straightforward contribution
-- Immediate tax deduction
-- No valuation required
+**Examples of accepted assets include:**
+- Cash or wire transfers
+- Stocks, bonds, and mutual funds
+- Private equity or business interests
+- Real estate and land
+- Cryptocurrency (including Bitcoin, Ethereum, Solana, Gnosis, and other supported chains)
+- Intellectual property and collectibles
 
-### Requirements
-- Personal or business checks
-- Wire transfers
-- Electronic funds transfer
+We accept crypto donations from major blockchains with strong security and liquidity. Our team provides bespoke support to ensure smooth, compliant transfers—always tailored to your needs.
 
-## Publicly Traded Securities
-
-### Stocks
-- Common and preferred shares
-- Domestic and international stocks
-- No capital gains tax on appreciated shares
-
-### Bonds
-- Corporate bonds
-- Municipal bonds
-- Treasury securities
-
-### Mutual Funds
-- Open-end mutual funds
-- Exchange-traded funds (ETFs)
-- Closed-end funds
-
-## Private Securities
-
-### Requirements
-- Pre-approval required
-- Professional valuation needed
-- Liquidity assessment
-
-### Types
-- Private company stock
-- Limited partnership interests
-- Private equity holdings
-
-## Real Estate
-
-### Residential Property
-- Single-family homes
-- Condominiums
-- Multi-family properties
-
-### Commercial Property
-- Office buildings
-- Retail spaces
-- Industrial properties
-
-### Land
-- Vacant land
-- Agricultural property
-- Development parcels
-
-## Other Assets
-
-### Business Interests
-- S-corporation shares
-- LLC interests
-- Partnership interests
-
-### Intellectual Property
-- Patents
-- Copyrights
-- Royalty streams
-
-### Collectibles
-- Artwork
-- Rare coins
-- Other valuable collections
-
-## Contribution Process
-
-1. **Initial Assessment**
-   - Asset type review
-   - Valuation requirements
-   - Transfer logistics
-
-2. **Documentation**
-   - Ownership verification
-   - Valuation documentation
-   - Transfer instructions
-
-3. **Acceptance**
-   - Board approval if required
-   - Transfer coordination
-   - Tax documentation
-
-## Tax Considerations
-
-- Immediate tax deduction
-- Avoidance of capital gains tax
-- Estate tax benefits
-- State-specific considerations
-
-## Need Help?
-
-Our team can help you navigate the contribution process for any asset type. [Contact us](/contact) to discuss your specific situation. 
+Every contribution begins with a conversation. If you’re considering a gift, [contact us](/contact) to explore next steps.

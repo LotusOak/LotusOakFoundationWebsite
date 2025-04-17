@@ -23,6 +23,10 @@ Rooted in the wisdom of ages,
 East and West, ancient and modern,  
 Echoing the eternal Tao.
 
+## What We Do
+
+The Lotus Oak Foundation blends philanthropy and ethical investment to address challenges in education, environment, healthcare, and culture. We operate a donor-advised fund model that supports high-impact initiatives, combining timeless wisdom with modern tools.
+
 ## Our Mission
 
 We blend traditional philanthropy with innovative social venture approaches, enabling projects in education, healthcare, environmental conservation, and other crucial impact areas to flourish. Our core mission is to address systemic challenges through collaboration, research-based solutions, and responsible stewardship of resources, ensuring the greatest possible impact on community well-being.
@@ -42,5 +46,8 @@ We blend traditional philanthropy with innovative social venture approaches, ena
 {% for post in site.posts limit:3 %}
 - [{{ post.title }}]({{ post.url | relative_url }}) — {{ post.date | date: "%B %d, %Y" }}
 {% endfor %}
+
+**Disclaimer**  
+The content presented on this site is for informational purposes only and does not constitute financial, legal, or investment advice. The Lotus Oak Foundation is not a registered investment advisor. Please consult a qualified professional before making any financial decisions.
 
 [View all posts]({{ '/blog/' | relative_url }})
