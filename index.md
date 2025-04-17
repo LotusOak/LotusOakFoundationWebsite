@@ -1,9 +1,16 @@
 ---
-layout: default
-title: Home
+layout: page            # minima has 'page', 'post' and 'home' (home == blog index)
+title: "Home"
+permalink: /
 ---
 
-# Welcome to Lotus Oak Foundation 🌸🌳
+# Lotus Oak Foundation
+*Cultivating wisdom, technology, and culture for generations to come.*
+
+<div class="btn-group">
+  <a class="btn-primary" href="{{ '/vision/' | relative_url }}">Our Vision</a>
+  <a class="btn-primary" href="{{ '/daf-explained/' | relative_url }}">What is a DAF?</a>
+</div>
 
 -- Website is in DRAFT FORM -- Not Final ! --
 
