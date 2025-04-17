@@ -1,9 +1,22 @@
 title: Lotus Oak Foundation
-#logo: /assets/img/lotusoak.png <-- replace with logo file and uncomment
-#description: text below image
-show_downloads: false
-theme: jekyll-theme-minimal
+url: "https://adamgoyer.github.io"   # your GitHub Pages domain
+baseurl: "/LotusOak"                 # repo name **with leading slash**
+
+# Theme & plugins
+theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-sitemap   # optional, but nice
+  - jekyll-sitemap
+
+# Directory‑style URLs (no .html)
+permalink: /:title/
+
+# Optional top‑nav links (minima shows these automatically)
+header_pages:
+  - vision.md
+  - team.md
+  - daf-explained.md
+  - lotus-oak-fund.md
+  - blog/index.md
+  - contact.md
