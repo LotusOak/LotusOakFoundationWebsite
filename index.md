@@ -7,12 +7,7 @@ permalink: /
 # Lotus Oak Foundation
 *Cultivating wisdom, technology, and culture for generations to come.*
 
-<div class="btn-group">
-  <a class="btn-primary" href="{{ '/vision/' | relative_url }}">Our Vision</a>
-  <a class="btn-primary" href="{{ '/daf-explained/' | relative_url }}">What is a DAF?</a>
-</div>
-
--- Website is in DRAFT FORM -- Not Final ! --
+Draft notice: This site is currently in DRAFT mode. Content and design will evolve quickly—stay tuned!
 
 
 The oak stands firm,  
