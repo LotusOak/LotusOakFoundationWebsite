@@ -32,18 +32,20 @@ Echoing the eternal Tao.
 
 We blend traditional philanthropy with innovative social venture approaches, enabling projects in education, healthcare, environmental conservation, and other crucial impact areas to flourish. Our core mission is to address systemic challenges through collaboration, research-based solutions, and responsible stewardship of resources, ensuring the greatest possible impact on community well-being.
 
-## Quick Links
+## Quick Links
 
-- [Our Vision](/vision)
-- [Meet the Team](/team)
-- [How It Works](/how-it-works)
-- [Investment Options](/investment-options)
-- [Contact Us](/contact)
+<ul class="quick-links">
+  <li><a href="{{ '/vision/' | relative_url }}">Our Vision</a></li>
+  <li><a href="{{ '/team/' | relative_url }}">Meet the Team</a></li>
+  <li><a href="{{ '/how-it-works/' | relative_url }}">How It Works</a></li>
+  <li><a href="{{ '/investment-options/' | relative_url }}">Investment Options</a></li>
+  <li><a href="{{ '/contact/' | relative_url }}">Contact Us</a></li>
+</ul>
 
 ## Latest Updates
 
 {% for post in site.posts limit:3 %}
-- [{{ post.title }}]({{ post.url }}) - {{ post.date | date: "%B %d, %Y" }}
+- [{{ post.title }}]({{ post.url | relative_url }}) — {{ post.date | date: "%B %d, %Y" }}
 {% endfor %}
 
-[View all posts](/blog) 
+[View all posts]({{ '/blog/' | relative_url }})
