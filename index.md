@@ -24,19 +24,19 @@ We blend traditional philanthropy with innovative social venture approaches, ena
 
 ## Quick Links
 
-- [Our Vision](/vision)
-- [Meet the Team](/team)
-- [How It Works](/how-it-works)
-- [Investment Options](/investment-options)
-- [Contact Us](/contact)
+- [Our Vision]({{ '/vision' | relative_url }})
+- [Meet the Team]({{ '/team' | relative_url }})
+- [How It Works]({{ '/how-it-works' | relative_url }})
+- [Investment Options]({{ '/investment-options' | relative_url }})
+- [Contact Us]({{ '/contact' | relative_url }})
 
 ## Latest Updates
 
 {% for post in site.posts limit:3 %}
-- [{{ post.title }}]({{ post.url }}) - {{ post.date | date: "%B %d, %Y" }}
+- [{{ post.title }}]({{ post.url | relative_url }}) - {{ post.date | date: "%B %d, %Y" }}
 {% endfor %}
 
-[View all posts](/blog)
+[View all posts]({{ '/blog' | relative_url }})
 
 ## Disclaimer
 

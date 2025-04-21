@@ -1,9 +1,13 @@
 title: Lotus Oak Foundation
-url: "https://adamgoyer.github.io"   # your GitHub Pages domain
-baseurl: "/LotusOak"                 # repo name **with leading slash**
+url: "https://lotusoak.org"   # your custom domain
+baseurl: ""                 # leave empty for custom domain
 
 # Theme & plugins
 theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Build settings
 markdown: kramdown
