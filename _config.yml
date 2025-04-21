@@ -4,18 +4,30 @@ baseurl: "/LotusOak"                 # repo name **with leading slash**
 
 # Theme & plugins
 theme: minima
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
 
-# Directory‑style URLs (no .html)
-permalink: /:title/
+# Build settings
+markdown: kramdown
+permalink: pretty
 
-# Optional top‑nav links (minima shows these automatically)
-header_pages:
-  - vision.md
-  - team.md
-  - daf-explained.md
-  - blog/index.md
-  - contact.md
+# Navigation
+nav_external_links:
+  - title: Our Vision
+    url: /vision
+  - title: Our Team
+    url: /team
+  - title: DAF Explained
+    url: /daf-explained
+  - title: Contact
+    url: /contact
+
+# Default front matter
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      author: "Lotus Oak Team"
+      show_sidebar: true
+      show_breadcrumbs: true
