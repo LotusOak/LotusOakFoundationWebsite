@@ -1,0 +1,74 @@
+@import "{{ site.theme }}";
+
+// Enhanced Navigation Styles
+.site-nav {
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    
+    .dropbtn {
+      background-color: transparent;
+      color: #111;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      
+      a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        
+        &:hover {
+          background-color: #f1f1f1;
+        }
+      }
+    }
+    
+    &:hover .dropdown-content {
+      display: block;
+    }
+  }
+}
+
+// Responsive Navigation
+@media screen and (max-width: 600px) {
+  .site-nav {
+    position: absolute;
+    top: 9px;
+    right: 15px;
+    background-color: #fdfdfd;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    text-align: right;
+    
+    .dropdown {
+      display: block;
+      padding: 5px 10px;
+      
+      .dropdown-content {
+        position: static;
+        display: none;
+        box-shadow: none;
+        
+        a {
+          padding: 5px 10px;
+        }
+      }
+      
+      &:hover .dropdown-content {
+        display: block;
+      }
+    }
+  }
+} 
