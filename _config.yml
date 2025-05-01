@@ -12,6 +12,7 @@ plugins:
 # Build settings
 markdown: kramdown
 permalink: pretty
+source: website
 
 # Navigation
 nav_external_links:
