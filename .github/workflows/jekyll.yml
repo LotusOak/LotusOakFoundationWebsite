@@ -42,6 +42,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./_site
+          name: github-pages
 
   test:
     runs-on: ubuntu-latest
@@ -57,7 +58,7 @@ jobs:
           bundler-cache: true
 
       - name: Download built site
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: github-pages
           path: ./_site
