@@ -1,0 +1,91 @@
+@import "minima";
+
+/* Custom Lotus Oak header navigation styles */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  background: #f9faf9;
+}
+.site-title {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 1rem 0;
+  color: #333;
+  text-decoration: none;
+}
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.site-nav .trigger {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.site-nav .page-link,
+.site-nav .dropbtn {
+  color: #2a7ae2;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+.site-nav .page-link:hover,
+.site-nav .dropbtn:hover {
+  background: #e6f0fa;
+  color: #174a7c;
+}
+/* Dropdown styles */
+.site-nav .dropdown {
+  position: relative;
+  display: inline-block;
+}
+.site-nav .dropdown-content {
+  display: none;
+  position: absolute;
+  background: #fff;
+  min-width: 180px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+  z-index: 10;
+  border-radius: 6px;
+  margin-top: 0.5rem;
+}
+.site-nav .dropdown-content a {
+  color: #2a7ae2;
+  padding: 0.5rem 1rem;
+  display: block;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.site-nav .dropdown-content a:hover {
+  background: #e6f0fa;
+  color: #174a7c;
+}
+.site-nav .dropdown:hover .dropdown-content,
+.site-nav .dropdown:focus-within .dropdown-content {
+  display: block;
+}
+
+/* Responsive: stack nav on mobile */
+@media (max-width: 700px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 1rem;
+  }
+  .site-nav {
+    width: 100%;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .site-nav .trigger {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+  }
+} 

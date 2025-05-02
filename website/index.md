@@ -30,14 +30,6 @@ We blend traditional philanthropy with innovative social venture approaches, ena
 - [Investment Options]({{ '/investment-options' | relative_url }})
 - [Contact Us]({{ '/contact' | relative_url }})
 
-## Latest Updates
-
-{% for post in site.posts limit:3 %}
-- [{{ post.title }}]({{ post.url | relative_url }}) - {{ post.date | date: "%B %d, %Y" }}
-{% endfor %}
-
-[View all posts]({{ '/blog' | relative_url }})
-
 ## Disclaimer
 
 The content presented on this site is for informational purposes only and does not constitute financial, legal, or investment advice. The Lotus Oak Foundation is not a registered investment advisor. Please consult a qualified professional before making any financial decisions.
