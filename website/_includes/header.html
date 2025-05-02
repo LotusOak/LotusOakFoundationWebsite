@@ -1,9 +1,10 @@
-{% assign pages = site.pages | sort: "nav_order" %}
+{% assign nav_sections = site.data.navigation.nav_sections %}
+{% assign nav_external_links = site.data.navigation.nav_external_links %}
 
 <header class="site-header" role="banner">
   <div class="wrapper">
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-    <nav class="site-nav">
+    <nav class="site-nav" role="navigation" aria-label="Main Navigation">
       <input type="checkbox" id="nav-trigger" class="nav-trigger" />
       <label for="nav-trigger">
         <span class="menu-icon">
@@ -15,15 +16,25 @@
         </span>
       </label>
       <div class="trigger">
-        <a class="page-link" href="{{ "/vision/" | relative_url }}">Our Vision</a>
-        <a class="page-link" href="{{ "/team/" | relative_url }}">Our Team</a>
-        <a class="page-link" href="{{ "/how-it-works/" | relative_url }}">How It Works</a>
-        <a class="page-link" href="{{ "/benefits/" | relative_url }}">Benefits</a>
-        <a class="page-link" href="{{ "/investment-options/" | relative_url }}">Investment Options</a>
-        <a class="page-link" href="{{ "/accepted-assets/" | relative_url }}">Accepted Assets</a>
-        <a class="page-link" href="{{ "/daf-explained/" | relative_url }}">Donor-Advised Funds Explained</a>
-        <a class="page-link" href="{{ "/blog/" | relative_url }}">Blog</a>
-        <a class="page-link" href="{{ "/contact/" | relative_url }}">Contact Us</a>
+        {% for item in nav_sections %}
+          {% if item.subitems %}
+            <div class="dropdown">
+              <a class="page-link" href="#" aria-haspopup="true" aria-expanded="false">{{ item.title }}</a>
+              <div class="dropdown-content">
+                {% for sub in item.subitems %}
+                  <a class="page-link" href="{{ sub.url | relative_url }}">{{ sub.title }}</a>
+                {% endfor %}
+              </div>
+            </div>
+          {% else %}
+            <a class="page-link" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+          {% endif %}
+        {% endfor %}
+        {% if nav_external_links %}
+          {% for ext in nav_external_links %}
+            <a class="page-link" href="{{ ext.url }}" target="_blank" rel="noopener">{{ ext.title }}</a>
+          {% endfor %}
+        {% endif %}
       </div>
     </nav>
   </div>
