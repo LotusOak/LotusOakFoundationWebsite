@@ -5,6 +5,8 @@ nav_sections:
     url: "/vision"
   - title: "Our Team"
     url: "/team"
+  - title: "How It Works"
+    url: "/how-it-works"
   - title: "Investment Options"
     url: "/investment-options"
   - title: "Blog"
@@ -12,6 +14,4 @@ nav_sections:
   - title: "Contact"
     url: "/contact"
 
-nav_external_links:
-  - title: "Reports"
-    url: "https://external-site.org/reports" 
+nav_external_links: [] 
