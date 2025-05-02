@@ -67,7 +67,7 @@ jobs:
         run: bundle install
 
       - name: Run htmlproofer
-        run: bundle exec htmlproofer ./_site --check-external-hash --allow-hash-href --ignore-urls "http://localhost:4000"
+        run: bundle exec htmlproofer ./_site --check-external-hash --allow-hash-href --url-ignore "http://localhost:4000"
 
   deploy:
     environment:
