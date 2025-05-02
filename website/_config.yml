@@ -1,0 +1,22 @@
+title: Lotus Oak
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Lotus Oak - Your description here
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-seo-tag
+
+# Show post excerpts on home page
+show_excerpts: true
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      nav_sections: "{{ site.data.navigation.nav_sections }}"
+      nav_external_links: "{{ site.data.navigation.nav_external_links }}" 

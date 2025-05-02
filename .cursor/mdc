@@ -1,0 +1,116 @@
+# LotusOak.org Cursor Configuration
+
+# Project Type
+project_type: "jekyll-website"
+
+# Preferred Language Servers
+language_servers:
+  - "markdown"
+  - "ruby"
+  - "yaml"
+
+# File Patterns
+file_patterns:
+  content: "**/*.md"
+  templates: "**/_layouts/*.html"
+  includes: "**/_includes/*.html"
+  assets: "**/assets/**/*.{css,js,jpg,png,svg}"
+  config: "**/_config.yml"
+  ruby: "**/*.rb"
+
+# AI Assistant Preferences
+ai_assistant:
+  # Project Context
+  context:
+    - "This is a philanthropic website focused on regenerative initiatives"
+    - "Content should maintain a professional yet approachable tone"
+    - "Focus on education, healthcare, environmental conservation, and cultural renewal"
+    - "Primary content is written in Markdown and processed by Jekyll"
+  
+  # Code Style Preferences
+  code_style:
+    markdown:
+      max_line_length: 100
+      prefer_relative_links: true
+      use_alt_text_for_images: true
+      front_matter_required: true
+    ruby:
+      indent_size: 2
+      prefer_single_quotes: true
+    yaml:
+      indent_size: 2
+      prefer_double_quotes: true
+
+  # Common Tasks
+  common_tasks:
+    - "Creating and editing Markdown content"
+    - "Managing Jekyll configurations"
+    - "Working with Jekyll front matter"
+    - "Optimizing images and assets"
+    - "Maintaining consistent Markdown formatting"
+
+# Editor Settings
+editor:
+  # Recommended Extensions
+  recommended_extensions:
+    - "yzhang.markdown-all-in-one"
+    - "rebornix.ruby"
+    - "redhat.vscode-yaml"
+    - "esbenp.prettier-vscode"
+
+  # File Associations
+  file_associations:
+    "*.md": "markdown"
+    "*.yml": "yaml"
+    "*.yaml": "yaml"
+    "*.rb": "ruby"
+
+# Project-Specific Commands
+commands:
+  build: "bundle exec jekyll build"
+  serve: "bundle exec jekyll serve"
+  test: "bundle exec htmlproofer ./_site"
+
+# Environment Setup
+environment:
+  ruby_version: ">= 2.7.0"
+  required_tools:
+    - "git"
+    - "ruby"
+    - "bundle"
+    - "jekyll"
+  jekyll_plugins:
+    - "jekyll-feed"
+    - "jekyll-seo-tag"
+    - "jekyll-sitemap"
+
+# Documentation
+documentation:
+  main_readme: "website/README.md"
+  project_rules: "CURSOR_RULES.md"
+  style_guide: "website/_includes/style-guide.md"
+
+# Security Considerations
+security:
+  sensitive_files:
+    - "**/_config.yml"
+    - "**/.env*"
+    - "**/credentials*"
+  recommended_actions:
+    - "Never commit API keys or secrets"
+    - "Use environment variables for sensitive data"
+    - "Review all third-party dependencies"
+
+# Performance Guidelines
+performance:
+  image_optimization:
+    max_width: 1920
+    max_height: 1080
+    preferred_format: "webp"
+  asset_optimization:
+    minify_css: true
+    minify_js: true
+    compress_images: true
+
+# Last Updated
+last_updated: "2024-05-01" 

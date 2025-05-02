@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-05-01T20:30:15-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Lotus Oak Foundation</title><entry><title type="html">Test Blog Post</title><link href="http://localhost:4000/2024/05/01/test-post/" rel="alternate" type="text/html" title="Test Blog Post" /><published>2024-05-01T00:00:00-07:00</published><updated>2024-05-01T00:00:00-07:00</updated><id>http://localhost:4000/2024/05/01/test-post</id><content type="html" xml:base="http://localhost:4000/2024/05/01/test-post/"><![CDATA[<h1 id="test-blog-post">Test Blog Post</h1>
+
+<p>This is a test blog post to verify that our blog functionality is working correctly.</p>
+
+<h2 id="what-were-testing">What We’re Testing</h2>
+
+<ul>
+  <li>Blog post display</li>
+  <li>Date formatting</li>
+  <li>Author attribution</li>
+  <li>Markdown rendering</li>
+  <li>Post layout</li>
+</ul>
+
+<h2 id="next-steps">Next Steps</h2>
+
+<p>Once this post appears correctly, we can:</p>
+<ol>
+  <li>Add more meaningful content</li>
+  <li>Customize the blog layout</li>
+  <li>Add categories or tags if needed</li>
+</ol>
+
+<p>Stay tuned for more updates!</p>]]></content><author><name>Lotus Oak Team</name></author><summary type="html"><![CDATA[Test Blog Post]]></summary></entry></feed>

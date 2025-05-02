@@ -14,14 +14,42 @@ markdown: kramdown
 permalink: pretty
 source: website
 
-# Navigation
-nav_external_links:
-  - title: Our Vision
-    url: /vision
-  - title: Our Team
-    url: /team
-  - title: DAF Explained
-    url: /daf-explained
+# Navigation Structure
+nav_sections:
+  - title: About Us
+    subitems:
+      - title: Our Vision
+        url: /vision
+      - title: Our Team
+        url: /team
+      - title: Our Impact
+        url: /impact
+  - title: Get Involved
+    subitems:
+      - title: Investment Options
+        url: /investment-options
+      - title: DAF Explained
+        url: /daf-explained
+      - title: Partner With Us
+        url: /partnership
+  - title: Focus Areas
+    subitems:
+      - title: Education
+        url: /education
+      - title: Healthcare
+        url: /healthcare
+      - title: Environmental Conservation
+        url: /environment
+      - title: Cultural Renewal
+        url: /culture
+  - title: Resources
+    subitems:
+      - title: Blog
+        url: /blog
+      - title: News
+        url: /news
+      - title: Reports
+        url: /reports
   - title: Contact
     url: /contact
 
