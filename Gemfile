@@ -5,6 +5,7 @@ gem "minima", "~> 2.5"
 gem "csv"
 gem "logger"
 gem "base64"
+gem "html-proofer", "~> 5.0"
 
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
