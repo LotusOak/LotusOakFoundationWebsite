@@ -26,8 +26,8 @@ nav_sections:
         url: /impact
   - title: Get Involved
     subitems:
-      - title: Investment Options
-        url: /investment-options
+#      - title: Investment Options
+#        url: /investment-options
       - title: DAF Explained
         url: /daf-explained
       - title: Partner With Us

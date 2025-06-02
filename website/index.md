@@ -27,7 +27,7 @@ We blend traditional philanthropy with innovative social venture approaches, ena
 - [Our Vision]({{ '/vision' | relative_url }})
 - [Meet the Team]({{ '/team' | relative_url }})
 - [How It Works]({{ '/how-it-works' | relative_url }})
-- [Investment Options]({{ '/investment-options' | relative_url }})
+<!-- - [Investment Options]({{ '/investment-options' | relative_url }}) -->
 - [Contact Us]({{ '/contact' | relative_url }})
 
 ## Disclaimer
