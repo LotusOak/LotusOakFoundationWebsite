@@ -1,8 +1,10 @@
 ---
 layout: page
 title: Investment Options
+published: false
 ---
 
+<!--
 # Investment Options: Tailored to Your Goals
 
 ## Our Investment Philosophy
@@ -18,3 +20,4 @@ For now, all investment management is handled internally through this philosophy
 ## Need Guidance?
 
 Our investment team is here to help you choose the right strategy for your philanthropic goals. [Contact us](/contact) to schedule a consultation.
+-->
