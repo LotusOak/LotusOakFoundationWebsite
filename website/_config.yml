@@ -1,9 +1,9 @@
-title: Lotus Oak
-email: your-email@example.com
+title: Lotus Oak Foundation
+email: contact@lotusoak.org
 description: >- # this means to ignore newlines until "baseurl:"
-  Lotus Oak - Your description here
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+  Blending traditional philanthropy with innovative social venture approaches
+baseurl: "" # leave empty for custom domain
+url: "https://lotusoak.org" # your custom domain
 
 # Build settings
 markdown: kramdown
