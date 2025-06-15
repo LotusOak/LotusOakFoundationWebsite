@@ -1,0 +1,48 @@
+
+> lotus-oak-react@0.1.0 dev
+> next dev --turbopack
+
+   ▲ Next.js 15.3.3 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.86.250:3000
+
+ ✓ Starting...
+ ✓ Ready in 725ms
+ ○ Compiling / ...
+ ✓ Compiled / in 4.7s
+ ⨯ Error: Cannot find module '../chunks/ssr/[turbopack]_runtime.js'
+Require stack:
+- /Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/.next/server/app/page.js
+- /Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/node_modules/next/dist/server/require.js
+- /Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/node_modules/next/dist/server/load-components.js
+- /Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/node_modules/next/dist/build/utils.js
+- /Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/node_modules/next/dist/build/swc/options.js
+- /Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/node_modules/next/dist/build/swc/index.js
+- /Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/node_modules/next/dist/server/config.js
+- /Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/node_modules/next/dist/server/next.js
+- /Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/node_modules/next/dist/server/lib/start-server.js
+    at Object.<anonymous> (.next/server/app/page.js:2:17) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/'
+}
+ ✓ Compiled /_error in 358ms
+ ⨯ Error: Cannot find module '../chunks/ssr/[turbopack]_runtime.js'
+Require stack:
+- /Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/.next/server/pages/_document.js
+- /Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/node_modules/next/dist/server/require.js
+- /Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/node_modules/next/dist/server/load-components.js
+- /Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/node_modules/next/dist/build/utils.js
+- /Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/node_modules/next/dist/build/swc/options.js
+- /Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/node_modules/next/dist/build/swc/index.js
+- /Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/node_modules/next/dist/server/config.js
+- /Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/node_modules/next/dist/server/next.js
+- /Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/node_modules/next/dist/server/lib/start-server.js
+    at Object.<anonymous> (.next/server/pages/_document.js:2:17) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ HEAD / 500 in 5167ms
+[?25h

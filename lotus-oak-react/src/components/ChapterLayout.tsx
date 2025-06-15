@@ -21,7 +21,7 @@ export default function ChapterLayout({
 }: ChapterLayoutProps) {
   const router = useRouter();
   
-  // Keyboard navigation handler
+  // Navigation handlers - keeping only home/escape shortcuts
   const handleKeyPress = useCallback((event: KeyboardEvent) => {
     // Don't interfere with form inputs or when modifiers are pressed
     if (event.target instanceof HTMLInputElement || 
@@ -31,25 +31,6 @@ export default function ChapterLayout({
     }
     
     switch (event.key) {
-      case 'ArrowRight':
-      case ' ':
-      case 'n':
-      case 'N':
-        event.preventDefault();
-        if (nextChapter) {
-          router.push(nextChapter);
-        }
-        break;
-        
-      case 'ArrowLeft':
-      case 'p':
-      case 'P':
-        event.preventDefault();
-        if (prevChapter) {
-          router.push(prevChapter);
-        }
-        break;
-        
       case 'h':
       case 'H':
       case 'Home':
@@ -62,15 +43,35 @@ export default function ChapterLayout({
         router.push('/');
         break;
     }
+  }, [router]);
+  
+  // Scroll navigation handler
+  const handleWheel = useCallback((event: WheelEvent) => {
+    event.preventDefault();
+    
+    if (event.deltaY > 0) {
+      // Scrolling down - go to next chapter
+      if (nextChapter) {
+        router.push(nextChapter);
+      }
+    } else if (event.deltaY < 0) {
+      // Scrolling up - go to previous chapter
+      if (prevChapter) {
+        router.push(prevChapter);
+      }
+    }
   }, [router, nextChapter, prevChapter]);
   
-  // Set up keyboard event listeners
+  // Set up navigation event listeners
   useEffect(() => {
     document.addEventListener('keydown', handleKeyPress);
+    document.addEventListener('wheel', handleWheel, { passive: false });
+    
     return () => {
       document.removeEventListener('keydown', handleKeyPress);
+      document.removeEventListener('wheel', handleWheel);
     };
-  }, [handleKeyPress]);
+  }, [handleKeyPress, handleWheel]);
   
   return (
     <div className="fixed inset-0 flex bg-background" role="main">
@@ -85,38 +86,39 @@ export default function ChapterLayout({
       {/* Vertical numbering system - Rick Rubin style */}
       <div className="w-16 bg-gray-50 flex flex-col items-center pt-8">
         {[
-          { num: 'intro', label: '00' },
-          { num: '01', label: '01' },
-          { num: '02', label: '02' },
-          { num: '03', label: '03' },
-          { num: '04', label: '04' },
-          { num: '05', label: '05' }
-        ].map(({ num, label }) => (
-          <div
+          { num: 'intro', label: '00', href: '/' },
+          { num: '01', label: '01', href: '/chapter-01' },
+          { num: '02', label: '02', href: '/chapter-02' },
+          { num: '03', label: '03', href: '/chapter-03' },
+          { num: '04', label: '04', href: '/chapter-04' },
+          { num: '05', label: '05', href: '/chapter-05' }
+        ].map(({ num, label, href }) => (
+          <Link
             key={num}
-            className={`text-xs text-gray-400 mb-6 ${
+            href={href}
+            className={`text-xs mb-6 cursor-pointer transition-colors ${
               chapterNumber === num 
                 ? 'text-gray-800 font-medium' 
-                : ''
+                : 'text-gray-400 hover:text-gray-600'
             }`}
           >
             {label}
-          </div>
+          </Link>
         ))}
       </div>
       
       {/* Main content area with subtle background */}
-      <div className="flex-1 bg-gray-25 relative flex">
+      <div className="flex-1 bg-gray-25 relative flex flex-row">
         
         {/* Content column */}
         <div className="w-1/2 p-16 flex flex-col justify-center">
           <main 
             id="main-content"
-            className="space-y-8"
+            className="max-w-md"
             tabIndex={-1}
           >
             {/* Chapter number in content */}
-            <div className="text-gray-400 text-sm">
+            <div className="text-gray-400 text-sm mb-8">
               {chapterNumber === 'intro' ? '00' : chapterNumber}
             </div>
             
@@ -135,32 +137,6 @@ export default function ChapterLayout({
         </div>
       </div>
 
-      {/* Minimal navigation at bottom */}
-      <nav className="absolute bottom-8 left-20 right-8 z-10" aria-label="Chapter navigation">
-        <div className="flex justify-between items-center text-xs text-gray-400">
-          {prevChapter ? (
-            <Link 
-              href={prevChapter} 
-              className="hover:text-gray-600 transition-colors"
-            >
-              ←
-            </Link>
-          ) : (
-            <div />
-          )}
-          
-          {nextChapter ? (
-            <Link 
-              href={nextChapter} 
-              className="hover:text-gray-600 transition-colors"
-            >
-              →
-            </Link>
-          ) : (
-            <div />
-          )}
-        </div>
-      </nav>
     </div>
   );
 }
