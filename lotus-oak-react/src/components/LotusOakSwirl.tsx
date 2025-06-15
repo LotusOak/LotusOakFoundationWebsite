@@ -5,10 +5,40 @@ import { useEffect, useRef, useState } from 'react';
 // Themes: Oak (endurance) and Lotus (ephemeral beauty), balance of forces
 // Visualization: Particles that swirl between two centers - representing the duality of oak/lotus philosophy
 
+// Seasonal color variations for subtle thematic changes
+const getSeasonalColors = () => {
+  const now = new Date();
+  const month = now.getMonth(); // 0-11
+  
+  if (month >= 2 && month <= 4) { // March-May: Spring
+    return {
+      oak: 'rgba(88, 129, 87, 0.6)', // Fresher green
+      lotus: 'rgba(190, 150, 180, 0.4)' // Cherry blossom pink
+    };
+  } else if (month >= 5 && month <= 7) { // June-August: Summer
+    return {
+      oak: 'rgba(58, 95, 74, 0.7)', // Deep summer green
+      lotus: 'rgba(168, 142, 136, 0.5)' // Warm lotus
+    };
+  } else if (month >= 8 && month <= 10) { // September-November: Autumn
+    return {
+      oak: 'rgba(139, 107, 66, 0.6)', // Golden oak
+      lotus: 'rgba(178, 132, 116, 0.4)' // Autumn rose
+    };
+  } else { // December-February: Winter
+    return {
+      oak: 'rgba(74, 85, 104, 0.6)', // Cool gray-blue
+      lotus: 'rgba(158, 152, 162, 0.4)' // Winter mist
+    };
+  }
+};
+
 const LotusOakSwirl = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const animationFrameRef = useRef<number | null>(null);
   const [reducedMotion, setReducedMotion] = useState(false);
+  const mouseRef = useRef({ x: 300, y: 200, isHovering: false });
+  const clickEffectRef = useRef({ active: false, x: 0, y: 0, startTime: 0 });
   
   // Check for reduced motion preference
   useEffect(() => {
@@ -29,6 +59,46 @@ const LotusOakSwirl = () => {
     
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
+    
+    // Mouse interaction handlers
+    const handleMouseMove = (e: MouseEvent) => {
+      const rect = canvas.getBoundingClientRect();
+      mouseRef.current = {
+        x: (e.clientX - rect.left) * (600 / rect.width),
+        y: (e.clientY - rect.top) * (400 / rect.height),
+        isHovering: true
+      };
+    };
+    
+    const handleMouseEnter = () => {
+      mouseRef.current.isHovering = true;
+    };
+    
+    const handleMouseLeave = () => {
+      mouseRef.current.isHovering = false;
+    };
+    
+    const handleClick = (e: MouseEvent) => {
+      if (reducedMotion) return;
+      
+      const rect = canvas.getBoundingClientRect();
+      clickEffectRef.current = {
+        active: true,
+        x: (e.clientX - rect.left) * (600 / rect.width),
+        y: (e.clientY - rect.top) * (400 / rect.height),
+        startTime: Date.now()
+      };
+      
+      // Effect lasts for 2 seconds
+      setTimeout(() => {
+        clickEffectRef.current.active = false;
+      }, 2000);
+    };
+    
+    canvas.addEventListener('mousemove', handleMouseMove);
+    canvas.addEventListener('mouseenter', handleMouseEnter);
+    canvas.addEventListener('mouseleave', handleMouseLeave);
+    canvas.addEventListener('click', handleClick);
     
     // Fixed canvas dimensions to maintain consistent animation size
     const width = canvas.width = 600;
@@ -92,12 +162,13 @@ const LotusOakSwirl = () => {
         particle.x = staticX;
         particle.y = staticY;
         
-        // Draw particle
+        // Draw particle with seasonal colors
         const size = isOak ? 0.8 : 0.6;
         const opacity = isOak ? 0.6 : 0.4;
+        const seasonalColors = getSeasonalColors();
         const color = isOak 
-          ? `rgba(58, 95, 74, ${opacity})` // Oak sage
-          : `rgba(168, 142, 136, ${opacity})`; // Lotus pink-gray
+          ? seasonalColors.oak.replace(/[\d\.]+\)$/, `${opacity})`)
+          : seasonalColors.lotus.replace(/[\d\.]+\)$/, `${opacity})`);
         
         ctx.beginPath();
         ctx.arc(particle.x, particle.y, size, 0, Math.PI * 2);
@@ -122,6 +193,18 @@ const LotusOakSwirl = () => {
       ctx.fillStyle = 'rgba(254, 254, 254, 0.08)';
       ctx.fillRect(0, 0, width, height);
       
+      // Draw subtle mouse interaction area when hovering
+      if (mouseRef.current.isHovering && !reducedMotion) {
+        const mouseX = mouseRef.current.x;
+        const mouseY = mouseRef.current.y;
+        const gradient = ctx.createRadialGradient(mouseX, mouseY, 0, mouseX, mouseY, 100);
+        gradient.addColorStop(0, 'rgba(58, 95, 74, 0.02)');
+        gradient.addColorStop(1, 'rgba(58, 95, 74, 0)');
+        
+        ctx.fillStyle = gradient;
+        ctx.fillRect(0, 0, width, height);
+      }
+      
       // Two centers - Oak (left, stable) and Lotus (right, flowing)
       const oakCenter = { x: width * 0.3, y: height * 0.5 };
       const lotusCenter = { x: width * 0.7, y: height * 0.5 };
@@ -133,6 +216,25 @@ const LotusOakSwirl = () => {
         
         // Update particle's orbital motion with swirling
         particle.angle += particle.speed * 0.02 * particle.swirl;
+        
+        // Mouse interaction - particles gently respond to cursor proximity
+        if (mouseRef.current.isHovering && !reducedMotion) {
+          const mouseX = mouseRef.current.x;
+          const mouseY = mouseRef.current.y;
+          const dx = particle.x - mouseX;
+          const dy = particle.y - mouseY;
+          const distance = Math.sqrt(dx * dx + dy * dy);
+          const influenceRadius = 100;
+          
+          if (distance < influenceRadius) {
+            const influence = (1 - distance / influenceRadius) * 0.5;
+            const isAttracted = isOak; // Oak particles attracted, Lotus particles repelled
+            const force = isAttracted ? -influence : influence;
+            
+            particle.x += (dx / distance) * force;
+            particle.y += (dy / distance) * force;
+          }
+        }
         
         // Oak particles: more stable, slower movement
         // Lotus particles: more fluid, faster movement
@@ -168,16 +270,43 @@ const LotusOakSwirl = () => {
         const baseOpacity = isOak ? 0.6 : 0.4; // Oak more solid, lotus more ethereal
         const opacity = Math.max(0.1, baseOpacity + particle.z * 0.3);
         
-        // Color based on center - Oak (sage green), Lotus (soft pink)
+        // Color based on center with seasonal variations
+        const seasonalColors = getSeasonalColors();
         const color = isOak 
-          ? `rgba(58, 95, 74, ${opacity})` // Oak sage
-          : `rgba(168, 142, 136, ${opacity})`; // Lotus pink-gray
+          ? seasonalColors.oak.replace(/[\d\.]+\)$/, `${opacity})`)
+          : seasonalColors.lotus.replace(/[\d\.]+\)$/, `${opacity})`);
         
         ctx.beginPath();
         ctx.arc(particle.x, particle.y, Math.max(0.2, size), 0, Math.PI * 2);
         ctx.fillStyle = color;
         ctx.fill();
       });
+      
+      // Draw click effect - expanding circle of harmony
+      if (clickEffectRef.current.active) {
+        const elapsed = Date.now() - clickEffectRef.current.startTime;
+        const progress = elapsed / 2000; // 2 second duration
+        const easeOut = 1 - Math.pow(1 - progress, 3);
+        
+        const x = clickEffectRef.current.x;
+        const y = clickEffectRef.current.y;
+        const radius = easeOut * 150;
+        const opacity = 1 - progress;
+        
+        // Create a gentle ripple effect
+        ctx.strokeStyle = `rgba(58, 95, 74, ${opacity * 0.3})`;
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.arc(x, y, radius, 0, Math.PI * 2);
+        ctx.stroke();
+        
+        // Inner harmony glow
+        const gradient = ctx.createRadialGradient(x, y, 0, x, y, radius);
+        gradient.addColorStop(0, `rgba(58, 95, 74, ${opacity * 0.1})`);
+        gradient.addColorStop(1, 'rgba(58, 95, 74, 0)');
+        ctx.fillStyle = gradient;
+        ctx.fill();
+      }
       
       animationFrameRef.current = requestAnimationFrame(animate);
     }
@@ -190,6 +319,12 @@ const LotusOakSwirl = () => {
         cancelAnimationFrame(animationFrameRef.current);
         animationFrameRef.current = null;
       }
+      
+      // Clean up mouse event listeners
+      canvas.removeEventListener('mousemove', handleMouseMove);
+      canvas.removeEventListener('mouseenter', handleMouseEnter);
+      canvas.removeEventListener('mouseleave', handleMouseLeave);
+      canvas.removeEventListener('click', handleClick);
       
       if (canvas && ctx) {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
