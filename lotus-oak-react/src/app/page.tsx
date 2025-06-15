@@ -8,12 +8,12 @@ export default function Home() {
       animation={<LotusOakSwirl />}
       nextChapter="/chapter-01"
     >
-      <h1 className="text-5xl font-serif mb-8">Lotus Oak Foundation</h1>
-      <p className="text-xl text-secondary italic mb-12 max-w-2xl mx-auto">
+      <h1 className="text-5xl font-serif mb-6">Lotus Oak Foundation</h1>
+      <p className="text-xl text-secondary italic mb-8 max-w-2xl mx-auto">
         Enabling transformative impact through values-aligned philanthropy and regenerative stewardship
       </p>
       
-      <div className="poetry text-lg max-w-xl mx-auto mb-8">
+      <div className="poetry text-lg max-w-xl mx-auto mb-6">
         The oak stands firm,<br />
         While the lotus blooms—it swiftly fades.<br /><br />
         Endurance and ephemerality,<br />

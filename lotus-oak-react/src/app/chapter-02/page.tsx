@@ -9,15 +9,15 @@ export default function Chapter02() {
       prevChapter="/chapter-01"
       nextChapter="/chapter-03"
     >
-      <h2 className="text-3xl font-serif mb-8">Our Mission</h2>
+      <h2 className="text-3xl font-serif mb-6">Our Mission</h2>
       
-      <p className="text-lg leading-relaxed mb-8 max-w-3xl mx-auto">
+      <p className="text-lg leading-relaxed mb-6 max-w-3xl mx-auto">
         We blend traditional philanthropy with innovative social venture approaches, 
         enabling projects in education, healthcare, environmental conservation, and 
         cultural renewal to flourish through values-aligned giving.
       </p>
       
-      <div className="space-y-4 max-w-2xl mx-auto text-left mb-8">
+      <div className="space-y-4 max-w-2xl mx-auto text-left mb-6">
         <p className="text-base">
           <span className="font-serif italic text-accent">Collaborative Solutions</span> — 
           Address systemic challenges through partnership and research-based approaches

@@ -8,14 +8,14 @@ export default function Chapter05() {
       animation={<LotusOakSwirl />}
       prevChapter="/chapter-04"
     >
-      <h2 className="text-3xl font-serif mb-8">Future Vision</h2>
+      <h2 className="text-3xl font-serif mb-6">Future Vision</h2>
       
-      <p className="text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
+      <p className="text-lg leading-relaxed mb-6 max-w-2xl mx-auto">
         As we grow, we explore innovative models for collective stewardship and 
         regenerative finance that can scale our impact while preserving our values.
       </p>
       
-      <div className="content-block max-w-2xl mx-auto mb-8">
+      <div className="content-block max-w-2xl mx-auto mb-6">
         <h3 className="font-serif text-xl text-accent mb-4">The Dryad Protocol</h3>
         <p className="text-base text-secondary leading-relaxed mb-4">
           An early-stage initiative exploring decentralized approaches to align 
@@ -28,7 +28,7 @@ export default function Chapter05() {
         </p>
       </div>
       
-      <p className="text-base text-secondary leading-relaxed mb-6 max-w-xl mx-auto">
+      <p className="text-base text-secondary leading-relaxed mb-4 max-w-xl mx-auto">
         Whether through traditional philanthropy or emerging collaborative models, 
         our commitment remains: thoughtful stewardship for lasting impact.
       </p>

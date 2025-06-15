@@ -30,11 +30,9 @@ const LotusOakSwirl = () => {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
     
-    // Make canvas responsive
-    const rect = canvas.getBoundingClientRect();
-    const width = canvas.width = rect.width * window.devicePixelRatio;
-    const height = canvas.height = rect.height * window.devicePixelRatio;
-    ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
+    // Fixed canvas dimensions to maintain consistent animation size
+    const width = canvas.width = 600;
+    const height = canvas.height = 400;
     
     const PARTICLE_COUNT = 8000;
     const particles: Array<{
@@ -203,10 +201,10 @@ const LotusOakSwirl = () => {
   }, [reducedMotion]);
   
   return (
-    <div className="w-full max-w-[600px] h-[250px] md:h-[400px] mx-auto bg-background border-t border-b border-border">
+    <div className="w-[600px] h-[400px] mx-auto bg-background max-w-full overflow-hidden">
       <canvas
         ref={canvasRef}
-        className="block w-full h-full"
+        className="block w-[600px] h-[400px] max-w-full max-h-full"
         aria-label={reducedMotion ? "Static lotus oak pattern" : "Animated lotus oak particles"}
         role="img"
       />

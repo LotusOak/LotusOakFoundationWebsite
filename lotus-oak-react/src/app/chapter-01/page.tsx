@@ -9,14 +9,14 @@ export default function Chapter01() {
       prevChapter="/"
       nextChapter="/chapter-02"
     >
-      <h2 className="text-3xl font-serif mb-8">The Lotus Oak Philosophy</h2>
+      <h2 className="text-3xl font-serif mb-6">The Lotus Oak Philosophy</h2>
       
-      <p className="text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
+      <p className="text-lg leading-relaxed mb-6 max-w-2xl mx-auto">
         We draw inspiration from two ancient symbols that represent the wholeness 
         of human wisdom and natural resilience.
       </p>
       
-      <div className="space-y-6 max-w-2xl mx-auto text-left mb-8">
+      <div className="space-y-4 max-w-2xl mx-auto text-left mb-6">
         <p className="text-base">
           <span className="font-serif italic text-accent">The Oak</span> — 
           Represents endurance, strength, and deep roots. The masculine principle 

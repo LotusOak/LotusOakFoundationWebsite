@@ -9,9 +9,9 @@ export default function Chapter03() {
       prevChapter="/chapter-02"
       nextChapter="/chapter-04"
     >
-      <h2 className="text-3xl font-serif mb-8">Focus Areas</h2>
+      <h2 className="text-3xl font-serif mb-6">Focus Areas</h2>
       
-      <p className="text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
+      <p className="text-lg leading-relaxed mb-6 max-w-2xl mx-auto">
         We support transformative initiatives across four interconnected domains, 
         each essential for thriving communities and a regenerative future.
       </p>

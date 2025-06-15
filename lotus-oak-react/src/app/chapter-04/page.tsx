@@ -9,9 +9,9 @@ export default function Chapter04() {
       prevChapter="/chapter-03"
       nextChapter="/chapter-05"
     >
-      <h2 className="text-3xl font-serif mb-8">Our Approach</h2>
+      <h2 className="text-3xl font-serif mb-6">Our Approach</h2>
       
-      <p className="text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
+      <p className="text-lg leading-relaxed mb-6 max-w-2xl mx-auto">
         We provide bespoke philanthropy guidance through a personal, four-step process 
         designed to align your values with meaningful impact.
       </p>
