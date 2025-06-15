@@ -1,0 +1,25 @@
+
+> lotus-oak-react@0.1.0 dev
+> next dev
+
+   ▲ Next.js 15.3.3
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.86.250:3000
+
+ ✓ Starting...
+ ✓ Ready in 888ms
+ ○ Compiling / ...
+ ✓ Compiled / in 1741ms (790 modules)
+ ⨯ [Error: Cannot find module '/Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/.next/server/middleware-manifest.json'
+Require stack:
+- /Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/node_modules/next/dist/server/next-server.js
+- /Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/node_modules/next/dist/server/dev/next-dev-server.js
+- /Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/node_modules/next/dist/server/next.js
+- /Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/node_modules/next/dist/server/lib/start-server.js] {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 543ms (1106 modules)
+ HEAD / 500 in 2639ms
+[?25h

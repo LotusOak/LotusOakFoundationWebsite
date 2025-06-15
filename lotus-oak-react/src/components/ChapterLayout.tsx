@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { ReactNode, useEffect, useCallback } from 'react';
+import { ReactNode, useEffect, useCallback, useState } from 'react';
 import { useRouter } from 'next/navigation';
 
 interface ChapterLayoutProps {
@@ -21,7 +21,7 @@ export default function ChapterLayout({
 }: ChapterLayoutProps) {
   const router = useRouter();
   
-  // Keyboard navigation handler
+  // Navigation handlers - keeping only home/escape shortcuts
   const handleKeyPress = useCallback((event: KeyboardEvent) => {
     // Don't interfere with form inputs or when modifiers are pressed
     if (event.target instanceof HTMLInputElement || 
@@ -31,25 +31,6 @@ export default function ChapterLayout({
     }
     
     switch (event.key) {
-      case 'ArrowRight':
-      case ' ':
-      case 'n':
-      case 'N':
-        event.preventDefault();
-        if (nextChapter) {
-          router.push(nextChapter);
-        }
-        break;
-        
-      case 'ArrowLeft':
-      case 'p':
-      case 'P':
-        event.preventDefault();
-        if (prevChapter) {
-          router.push(prevChapter);
-        }
-        break;
-        
       case 'h':
       case 'H':
       case 'Home':
@@ -62,18 +43,67 @@ export default function ChapterLayout({
         router.push('/');
         break;
     }
-  }, [router, nextChapter, prevChapter]);
+  }, [router]);
   
-  // Set up keyboard event listeners
+  // Sophisticated scroll navigation with gesture completion detection
+  const [scrollAccumulator, setScrollAccumulator] = useState(0);
+  const [scrollTimeout, setScrollTimeout] = useState<NodeJS.Timeout | null>(null);
+  const [lastNavigationTime, setLastNavigationTime] = useState(0);
+  
+  const handleWheel = useCallback((event: WheelEvent) => {
+    event.preventDefault();
+    
+    const now = Date.now();
+    const timeSinceLastNav = now - lastNavigationTime;
+    
+    // Prevent navigation if we just navigated (within 1 second)
+    if (timeSinceLastNav < 1000) return;
+    
+    // Clear existing timeout
+    if (scrollTimeout) {
+      clearTimeout(scrollTimeout);
+    }
+    
+    // Accumulate scroll delta
+    setScrollAccumulator(prev => prev + event.deltaY);
+    
+    // Set a new timeout to detect when scrolling has stopped
+    const timeout = setTimeout(() => {
+      // Check accumulated scroll amount
+      const threshold = 100; // Higher threshold for more deliberate swipes
+      
+      if (Math.abs(scrollAccumulator) > threshold) {
+        const shouldGoNext = scrollAccumulator > 0;
+        
+        if (shouldGoNext && nextChapter) {
+          setLastNavigationTime(Date.now());
+          router.push(nextChapter);
+        } else if (!shouldGoNext && prevChapter) {
+          setLastNavigationTime(Date.now());
+          router.push(prevChapter);
+        }
+      }
+      
+      // Reset accumulator
+      setScrollAccumulator(0);
+    }, 150); // Wait 150ms for gesture to complete
+    
+    setScrollTimeout(timeout);
+  }, [router, nextChapter, prevChapter, scrollAccumulator, scrollTimeout, lastNavigationTime]);
+  
+  // Set up navigation event listeners
   useEffect(() => {
     document.addEventListener('keydown', handleKeyPress);
+    document.addEventListener('wheel', handleWheel, { passive: false });
+    
     return () => {
       document.removeEventListener('keydown', handleKeyPress);
+      document.removeEventListener('wheel', handleWheel);
     };
-  }, [handleKeyPress]);
+  }, [handleKeyPress, handleWheel]);
   
   return (
-    <div className="fixed inset-0 flex bg-background" role="main">
+    <div className="fixed inset-0 flex bg-background page-enter" role="main">
       {/* Skip to content link for screen readers */}
       <a 
         href="#main-content" 
@@ -85,38 +115,39 @@ export default function ChapterLayout({
       {/* Vertical numbering system - Rick Rubin style */}
       <div className="w-16 bg-gray-50 flex flex-col items-center pt-8">
         {[
-          { num: 'intro', label: '00' },
-          { num: '01', label: '01' },
-          { num: '02', label: '02' },
-          { num: '03', label: '03' },
-          { num: '04', label: '04' },
-          { num: '05', label: '05' }
-        ].map(({ num, label }) => (
-          <div
+          { num: 'intro', label: '00', href: '/' },
+          { num: '01', label: '01', href: '/chapter-01' },
+          { num: '02', label: '02', href: '/chapter-02' },
+          { num: '03', label: '03', href: '/chapter-03' },
+          { num: '04', label: '04', href: '/chapter-04' },
+          { num: '05', label: '05', href: '/chapter-05' }
+        ].map(({ num, label, href }) => (
+          <Link
             key={num}
-            className={`text-xs text-gray-400 mb-6 ${
+            href={href}
+            className={`text-xs mb-6 cursor-pointer transition-colors ${
               chapterNumber === num 
                 ? 'text-gray-800 font-medium' 
-                : ''
+                : 'text-gray-400 hover:text-gray-600'
             }`}
           >
             {label}
-          </div>
+          </Link>
         ))}
       </div>
       
       {/* Main content area with subtle background */}
-      <div className="flex-1 bg-gray-25 relative flex">
+      <div className="flex-1 bg-gray-25 relative flex flex-row">
         
         {/* Content column */}
-        <div className="w-1/2 p-16 flex flex-col justify-center">
+        <div className="w-1/2 p-16 flex flex-col justify-center content-enter">
           <main 
             id="main-content"
-            className="space-y-8"
+            className="max-w-md"
             tabIndex={-1}
           >
             {/* Chapter number in content */}
-            <div className="text-gray-400 text-sm">
+            <div className="text-gray-400 text-sm mb-8">
               {chapterNumber === 'intro' ? '00' : chapterNumber}
             </div>
             
@@ -128,39 +159,13 @@ export default function ChapterLayout({
         </div>
 
         {/* Animation column */}
-        <div className="w-1/2 flex items-center justify-center">
+        <div className="w-1/2 flex items-center justify-center animation-enter">
           <div aria-hidden="true" role="presentation">
             {animation}
           </div>
         </div>
       </div>
 
-      {/* Minimal navigation at bottom */}
-      <nav className="absolute bottom-8 left-20 right-8 z-10" aria-label="Chapter navigation">
-        <div className="flex justify-between items-center text-xs text-gray-400">
-          {prevChapter ? (
-            <Link 
-              href={prevChapter} 
-              className="hover:text-gray-600 transition-colors"
-            >
-              ←
-            </Link>
-          ) : (
-            <div />
-          )}
-          
-          {nextChapter ? (
-            <Link 
-              href={nextChapter} 
-              className="hover:text-gray-600 transition-colors"
-            >
-              →
-            </Link>
-          ) : (
-            <div />
-          )}
-        </div>
-      </nav>
     </div>
   );
 }
