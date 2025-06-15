@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 // Themes: Oak (endurance) and Lotus (ephemeral beauty), balance of forces
 // Visualization: Particles that swirl between two centers - representing the duality of oak/lotus philosophy
@@ -8,6 +8,20 @@ import { useEffect, useRef } from 'react';
 const LotusOakSwirl = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const animationFrameRef = useRef<number | null>(null);
+  const [reducedMotion, setReducedMotion] = useState(false);
+  
+  // Check for reduced motion preference
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+    setReducedMotion(mediaQuery.matches);
+    
+    const handleChange = (e: MediaQueryListEvent) => {
+      setReducedMotion(e.matches);
+    };
+    
+    mediaQuery.addEventListener('change', handleChange);
+    return () => mediaQuery.removeEventListener('change', handleChange);
+  }, []);
   
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -16,8 +30,11 @@ const LotusOakSwirl = () => {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
     
-    const width = canvas.width = 600;
-    const height = canvas.height = 400;
+    // Make canvas responsive
+    const rect = canvas.getBoundingClientRect();
+    const width = canvas.width = rect.width * window.devicePixelRatio;
+    const height = canvas.height = rect.height * window.devicePixelRatio;
+    ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
     
     const PARTICLE_COUNT = 8000;
     const particles: Array<{
@@ -52,8 +69,54 @@ const LotusOakSwirl = () => {
     let time = 0;
     let isRunning = true;
     
+    function drawStaticPattern() {
+      if (!ctx) return;
+      
+      // Clear canvas
+      ctx.fillStyle = 'rgba(254, 254, 254, 1)';
+      ctx.fillRect(0, 0, width, height);
+      
+      // Two centers - Oak (left, stable) and Lotus (right, flowing)
+      const oakCenter = { x: width * 0.3, y: height * 0.5 };
+      const lotusCenter = { x: width * 0.7, y: height * 0.5 };
+      
+      // Draw static pattern with balanced distribution
+      particles.forEach(particle => {
+        const center = particle.center === 0 ? oakCenter : lotusCenter;
+        const isOak = particle.center === 0;
+        
+        // Position particles in stable spiral pattern
+        const staticRadius = 60 + (particle.distance / 200) * 40;
+        const staticX = center.x + Math.cos(particle.angle) * staticRadius;
+        const staticY = center.y + Math.sin(particle.angle) * staticRadius * 0.6;
+        
+        // Set particle properties
+        particle.x = staticX;
+        particle.y = staticY;
+        
+        // Draw particle
+        const size = isOak ? 0.8 : 0.6;
+        const opacity = isOak ? 0.6 : 0.4;
+        const color = isOak 
+          ? `rgba(58, 95, 74, ${opacity})` // Oak sage
+          : `rgba(168, 142, 136, ${opacity})`; // Lotus pink-gray
+        
+        ctx.beginPath();
+        ctx.arc(particle.x, particle.y, size, 0, Math.PI * 2);
+        ctx.fillStyle = color;
+        ctx.fill();
+      });
+    }
+    
     function animate() {
       if (!isRunning || !ctx) return;
+      
+      // Respect reduced motion preference
+      if (reducedMotion) {
+        // Show static particle pattern instead of animation
+        drawStaticPattern();
+        return;
+      }
       
       time += 0.01;
       
@@ -137,13 +200,15 @@ const LotusOakSwirl = () => {
       particles.length = 0;
       time = 0;
     };
-  }, []);
+  }, [reducedMotion]);
   
   return (
-    <div className="w-[600px] h-[400px] mx-auto bg-background border-t border-b border-border">
+    <div className="w-full max-w-[600px] h-[250px] md:h-[400px] mx-auto bg-background border-t border-b border-border">
       <canvas
         ref={canvasRef}
-        className="block w-[600px] h-[400px]"
+        className="block w-full h-full"
+        aria-label={reducedMotion ? "Static lotus oak pattern" : "Animated lotus oak particles"}
+        role="img"
       />
     </div>
   );
