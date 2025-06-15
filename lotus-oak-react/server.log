@@ -1,48 +1,1795 @@
 
 > lotus-oak-react@0.1.0 dev
-> next dev --turbopack
+> next dev
 
-   ▲ Next.js 15.3.3 (Turbopack)
+   ▲ Next.js 15.3.3
    - Local:        http://localhost:3000
    - Network:      http://192.168.86.250:3000
 
  ✓ Starting...
- ✓ Ready in 725ms
+ ✓ Ready in 980ms
  ○ Compiling / ...
- ✓ Compiled / in 4.7s
- ⨯ Error: Cannot find module '../chunks/ssr/[turbopack]_runtime.js'
-Require stack:
-- /Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/.next/server/app/page.js
-- /Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/node_modules/next/dist/server/require.js
-- /Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/node_modules/next/dist/server/load-components.js
-- /Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/node_modules/next/dist/build/utils.js
-- /Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/node_modules/next/dist/build/swc/options.js
-- /Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/node_modules/next/dist/build/swc/index.js
-- /Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/node_modules/next/dist/build/next-config-ts/transpile-config.js
-- /Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/node_modules/next/dist/server/config.js
-- /Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/node_modules/next/dist/server/next.js
-- /Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/node_modules/next/dist/server/lib/start-server.js
-    at Object.<anonymous> (.next/server/app/page.js:2:17) {
-  code: 'MODULE_NOT_FOUND',
-  requireStack: [Array],
-  page: '/'
+ ✓ Compiled / in 508ms (758 modules)
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET / 200 in 653ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET / 200 in 30ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET / 200 in 29ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET / 200 in 28ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET / 200 in 28ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET / 200 in 31ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET / 200 in 25ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET / 200 in 19ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET / 200 in 29ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET / 200 in 26ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET / 200 in 42ms
+ ✓ Compiled /favicon.ico in 335ms (454 modules)
+ GET /favicon.ico 200 in 430ms
+ GET /favicon.ico 200 in 5ms
+ ○ Compiling /chapter-01 ...
+ ✓ Compiled /chapter-01 in 594ms (793 modules)
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 676ms
+ GET / 200 in 80ms
+ GET /favicon.ico 200 in 8ms
+ ✓ Compiled /chapter-02 in 194ms (781 modules)
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 237ms
+ ✓ Compiled /chapter-03 in 164ms (783 modules)
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 218ms
+ ✓ Compiled /chapter-04 in 160ms (785 modules)
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 215ms
+ ✓ Compiled /chapter-05 in 186ms (787 modules)
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 241ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 16ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 18ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 17ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 17ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 13ms
+ GET /favicon.ico 200 in 14ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 13ms
+ GET /favicon.ico 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 13ms
+ GET /favicon.ico 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 10ms
+ GET /favicon.ico 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 14ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 11ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 9ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 9ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 10ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 10ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 10ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 9ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 9ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 11ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 15ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 16ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 10ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 9ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 9ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 9ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 11ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 16ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 9ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 9ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 9ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 4ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 9ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 13ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 10ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 9ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 14ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 11ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 11ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 10ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 10ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 4ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 4ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 12ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 10ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 19ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 9ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 18ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 4ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 9ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 9ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 11ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 18ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 9ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 10ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 13ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 9ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 4ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 9ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 10ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 5ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 9ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 9ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 9ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 9ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 7ms
+ GET /favicon.ico 200 in 6ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET / 200 in 85ms
+ GET /favicon.ico 200 in 5ms
+ GET /favicon.ico 200 in 7ms
+ ✓ Compiled in 389ms (783 modules)
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 91ms
+ GET / 200 in 94ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ ReferenceError: React is not defined
+    at ChapterLayout (src/components/ChapterLayout.tsx:49:42)
+  47 |   
+  48 |   // Scroll navigation handler with threshold for better trackpad support
+> 49 |   const [isNavigating, setIsNavigating] = React.useState(false);
+     |                                          ^
+  50 |   
+  51 |   const handleWheel = useCallback((event: WheelEvent) => {
+  52 |     event.preventDefault(); {
+  digest: '3673307203'
 }
- ✓ Compiled /_error in 358ms
- ⨯ Error: Cannot find module '../chunks/ssr/[turbopack]_runtime.js'
-Require stack:
-- /Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/.next/server/pages/_document.js
-- /Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/node_modules/next/dist/server/require.js
-- /Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/node_modules/next/dist/server/load-components.js
-- /Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/node_modules/next/dist/build/utils.js
-- /Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/node_modules/next/dist/build/swc/options.js
-- /Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/node_modules/next/dist/build/swc/index.js
-- /Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/node_modules/next/dist/build/next-config-ts/transpile-config.js
-- /Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/node_modules/next/dist/server/config.js
-- /Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/node_modules/next/dist/server/next.js
-- /Users/adamgoyer/Library/Mobile Documents/com~apple~CloudDocs/Lotus Oak Family of Companies/root/projects/LotusOakFoundationWebsite/lotus-oak-react/node_modules/next/dist/server/lib/start-server.js
-    at Object.<anonymous> (.next/server/pages/_document.js:2:17) {
-  code: 'MODULE_NOT_FOUND',
-  requireStack: [Array]
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⨯ ReferenceError: React is not defined
+    at ChapterLayout (src/components/ChapterLayout.tsx:49:42)
+  47 |   
+  48 |   // Scroll navigation handler with threshold for better trackpad support
+> 49 |   const [isNavigating, setIsNavigating] = React.useState(false);
+     |                                          ^
+  50 |   
+  51 |   const handleWheel = useCallback((event: WheelEvent) => {
+  52 |     event.preventDefault(); {
+  digest: '3422397738'
 }
- HEAD / 500 in 5167ms
-[?25h
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 500 in 172ms
+ GET / 500 in 169ms
+ ✓ Compiled /favicon.ico in 239ms (464 modules)
+ GET /favicon.ico 200 in 326ms
+ GET /favicon.ico 200 in 5ms
+ GET /favicon.ico 200 in 6ms
+ GET /favicon.ico 200 in 2ms
+ GET /favicon.ico 200 in 2ms
+ GET /favicon.ico 200 in 3ms
+ ✓ Compiled in 169ms (799 modules)
+ ⨯ ReferenceError: React is not defined
+    at ChapterLayout (src/components/ChapterLayout.tsx:49:42)
+  47 |   
+  48 |   // Scroll navigation handler with threshold for better trackpad support
+> 49 |   const [isNavigating, setIsNavigating] = React.useState(false);
+     |                                          ^
+  50 |   
+  51 |   const handleWheel = useCallback((event: WheelEvent) => {
+  52 |     event.preventDefault(); {
+  digest: '3673307203'
+}
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 500 in 93ms
+[ResponseAborted: ]
+[ResponseAborted: ]
+ ⨯ ReferenceError: React is not defined
+    at ChapterLayout (src/components/ChapterLayout.tsx:49:42)
+  47 |   
+  48 |   // Scroll navigation handler with threshold for better trackpad support
+> 49 |   const [isNavigating, setIsNavigating] = React.useState(false);
+     |                                          ^
+  50 |   
+  51 |   const handleWheel = useCallback((event: WheelEvent) => {
+  52 |     event.preventDefault(); {
+  digest: '3422397738'
+}
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⨯ ReferenceError: React is not defined
+    at ChapterLayout (src/components/ChapterLayout.tsx:49:42)
+  47 |   
+  48 |   // Scroll navigation handler with threshold for better trackpad support
+> 49 |   const [isNavigating, setIsNavigating] = React.useState(false);
+     |                                          ^
+  50 |   
+  51 |   const handleWheel = useCallback((event: WheelEvent) => {
+  52 |     event.preventDefault(); {
+  digest: '3422397738'
+}
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⨯ ReferenceError: React is not defined
+    at ChapterLayout (src/components/ChapterLayout.tsx:49:42)
+  47 |   
+  48 |   // Scroll navigation handler with threshold for better trackpad support
+> 49 |   const [isNavigating, setIsNavigating] = React.useState(false);
+     |                                          ^
+  50 |   
+  51 |   const handleWheel = useCallback((event: WheelEvent) => {
+  52 |     event.preventDefault(); {
+  digest: '3673307203'
+}
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET / 500 in 69ms
+ GET /chapter-01 500 in 60ms
+ GET /favicon.ico 200 in 17ms
+ GET /favicon.ico 200 in 5ms
+ GET /favicon.ico 200 in 4ms
+ GET /favicon.ico 200 in 4ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 126ms (799 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET / 200 in 154ms
+ GET /chapter-01 200 in 70ms
+ GET /favicon.ico 200 in 11ms
+ GET /favicon.ico 200 in 2ms
+ GET /favicon.ico 200 in 9ms
+ GET /favicon.ico 200 in 2ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 35ms
+ GET /favicon.ico 200 in 8ms
+ GET /favicon.ico 200 in 4ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET / 200 in 14ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 13ms
+ ✓ Compiled /chapter-02 in 102ms (466 modules)
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 145ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 9ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 16ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 18ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET / 200 in 15ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 14ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 17ms
+ ✓ Compiled in 273ms (783 modules)
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 84ms
+ GET / 200 in 84ms
+ ✓ Compiled /favicon.ico in 89ms (464 modules)
+ GET /favicon.ico 200 in 142ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 84ms
+ GET /favicon.ico 200 in 6ms
+ GET /favicon.ico 200 in 4ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 9ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET / 200 in 17ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 14ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 12ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 18ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 18ms
+ ✓ Compiled /chapter-05 in 80ms (466 modules)
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 140ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 16ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET / 200 in 15ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 15ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 16ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 14ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 14ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 13ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 13ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 12ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 13ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET / 200 in 12ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 11ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 11ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 15ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 13ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 12ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET / 200 in 10ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 12ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 11ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 11ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET / 200 in 12ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 10ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 12ms
+ ✓ Compiled in 185ms (783 modules)
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET / 200 in 71ms
+ GET /chapter-02 200 in 72ms
+ ✓ Compiled /favicon.ico in 84ms (464 modules)
+ GET /favicon.ico 200 in 136ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET / 200 in 46ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 20ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 17ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 19ms
+ ✓ Compiled /chapter-04 in 137ms (450 modules)
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 231ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 9ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 14ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 16ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 15ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 20ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET / 200 in 14ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 11ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 14ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 13ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 17ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 14ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET / 200 in 10ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 13ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 12ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 12ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 13ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 11ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 15ms
+ ✓ Compiled in 225ms (783 modules)
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET / 200 in 67ms
+ GET /chapter-03 200 in 68ms
+ ✓ Compiled in 164ms (783 modules)
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 63ms
+ GET / 200 in 65ms
+ ✓ Compiled in 117ms (783 modules)
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET / 200 in 47ms
+ GET /chapter-03 200 in 48ms
+ ✓ Compiled in 214ms (783 modules)
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET / 200 in 53ms
+ GET /chapter-03 200 in 54ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 84ms
+ ✓ Compiled /favicon.ico in 350ms (464 modules)
+ GET /favicon.ico 200 in 410ms
+ GET /favicon.ico 200 in 2ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 48ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 9ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 9ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 18ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 13ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 15ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 13ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 12ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 18ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 12ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 18ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 13ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 7ms
+ ✓ Compiled /chapter-01 in 147ms (466 modules)
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 210ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET / 200 in 66ms
+ GET /chapter-01 200 in 15ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 13ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 11ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 7ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET / 200 in 12ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET / 200 in 15ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET / 200 in 10ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 13ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 13ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 18ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 11ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 19ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 11ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 10ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 23ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 10ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 18ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 15ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-05. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-05 200 in 10ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 15ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 13ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 16ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-04. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-04 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 11ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 15ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 13ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-03. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-03 200 in 8ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 13ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 14ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 11ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-02. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-02 200 in 15ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 13ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 14ms
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 13ms
+ ✓ Compiled in 135ms (335 modules)
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 31ms
+ GET / 200 in 31ms
+ ✓ Compiled in 49ms (335 modules)
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET / 200 in 11ms
+ GET /chapter-01 200 in 11ms
+ ✓ Compiled in 40ms (335 modules)
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET / 200 in 11ms
+ GET /chapter-01 200 in 10ms
+ ✓ Compiled in 44ms (335 modules)
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET / 200 in 10ms
+ GET /chapter-01 200 in 10ms
+ ✓ Compiled in 43ms (335 modules)
+ ⚠ Unsupported metadata viewport is configured in metadata export in /chapter-01. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /chapter-01 200 in 11ms
+ GET / 200 in 10ms

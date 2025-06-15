@@ -9,10 +9,11 @@ This Next.js application replaces the previous Jekyll site with a modern, intera
 ## Design Philosophy
 
 - **Single-screen pages**: No scrolling, each chapter fits within the viewport
-- **Contemplative aesthetic**: Inspired by The Way of Code's literary design
+- **Master craftsman aesthetic**: Inspired by Rick Rubin's disciplined, uniform approach
 - **Consistent animation**: LotusOakSwirl generative art maintains fixed position across all pages
-- **Typography-focused**: Crimson Text serif for headings, Inter for body text
-- **Micro-interactions**: Sophisticated hover states and transitions throughout
+- **Uniform typography**: Single font size (1.125rem) throughout - no hierarchical variations
+- **Minimal navigation**: Vertical numbering system (00-05) with subtle interactions
+- **Cinematic transitions**: Soft-close drawer effect with staggered fade-ins
 
 ## Technology Stack
 
@@ -51,10 +52,12 @@ Generative art component featuring 8000 particles in two systems:
 
 ### ChapterLayout
 Provides consistent single-screen layout with:
-- Fixed animation positioning
-- Chapter navigation (Previous/Next/Home)
-- Responsive content container
-- Viewport constraints (no scrolling)
+- Fixed animation positioning on the right
+- Vertical number navigation in left sidebar (clickable)
+- Scroll/swipe gesture navigation (with sophisticated gesture detection)
+- Keyboard shortcuts (H/Home for intro, Escape to return)
+- Cinematic page transitions with cascading animations
+- Two-column layout with content left, animation right
 
 ## Getting Started
 
@@ -97,9 +100,9 @@ npm run lint     # Run ESLint
 - **Background**: #fefefe (Pure white)
 
 ### Typography
-- **Headings**: Crimson Text serif, 600 weight
-- **Body**: Crimson Text serif, 400 weight
-- **UI Elements**: Inter sans-serif
+- **All text**: Crimson Text serif, 400 weight, 1.125rem
+- **No variations**: Uniform size throughout (master craftsman principle)
+- **UI Elements**: Inter sans-serif (navigation numbers only)
 
 ### Spacing
 - **Section**: 8rem (128px)
@@ -120,6 +123,31 @@ npm run lint     # Run ESLint
 3. Implement changes following existing patterns
 4. Update documentation
 5. Create pull request with issue reference
+
+## Navigation
+
+### User Interactions
+- **Click numbers**: Click any number in left sidebar (00-05) to navigate
+- **Scroll/Swipe**: Use trackpad or mouse wheel to navigate between chapters
+- **Keyboard**: Press `H` or `Home` for intro, `Escape` to return to intro
+- **Touch**: Swipe up/down on touch devices (mobile/tablet)
+
+### Navigation Implementation
+- Gesture accumulation over 150ms for accurate swipe detection
+- 1-second lockout between navigations to prevent multi-page jumps
+- Higher threshold (100) for deliberate trackpad swipes
+- Cinematic transitions with soft-close drawer effect
+
+## Known Issues & Considerations
+
+### Development Environment
+- **macOS Screen Timers**: Can shut down Node.js processes at scheduled times (e.g., 10pm)
+- **Solution**: Disable screen timers during development or be aware of time-based shutdowns
+
+### Technical Considerations
+- **Tailwind CSS v4**: Some utility classes cause errors (e.g., `@apply font-serif`)
+- **Turbopack**: Disabled due to compilation issues - using standard Next.js build
+- **TypeScript**: Requires `@types/estree` for proper type checking
 
 ## Deployment
 
@@ -167,4 +195,4 @@ All styles use Tailwind CSS with custom utilities defined in `globals.css`. Key 
 ---
 
 **Last Updated**: 2025-06-15
-**Version**: 1.0.0 (Phase 1: Visual Refinements Complete)
+**Version**: 0.3.0 (Navigation Improvements & Master Craftsman Design)

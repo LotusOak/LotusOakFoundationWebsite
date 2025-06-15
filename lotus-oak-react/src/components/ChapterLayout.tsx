@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { ReactNode, useEffect, useCallback } from 'react';
+import { ReactNode, useEffect, useCallback, useState } from 'react';
 import { useRouter } from 'next/navigation';
 
 interface ChapterLayoutProps {
@@ -45,22 +45,51 @@ export default function ChapterLayout({
     }
   }, [router]);
   
-  // Scroll navigation handler
+  // Sophisticated scroll navigation with gesture completion detection
+  const [scrollAccumulator, setScrollAccumulator] = useState(0);
+  const [scrollTimeout, setScrollTimeout] = useState<NodeJS.Timeout | null>(null);
+  const [lastNavigationTime, setLastNavigationTime] = useState(0);
+  
   const handleWheel = useCallback((event: WheelEvent) => {
     event.preventDefault();
     
-    if (event.deltaY > 0) {
-      // Scrolling down - go to next chapter
-      if (nextChapter) {
-        router.push(nextChapter);
-      }
-    } else if (event.deltaY < 0) {
-      // Scrolling up - go to previous chapter
-      if (prevChapter) {
-        router.push(prevChapter);
-      }
+    const now = Date.now();
+    const timeSinceLastNav = now - lastNavigationTime;
+    
+    // Prevent navigation if we just navigated (within 1 second)
+    if (timeSinceLastNav < 1000) return;
+    
+    // Clear existing timeout
+    if (scrollTimeout) {
+      clearTimeout(scrollTimeout);
     }
-  }, [router, nextChapter, prevChapter]);
+    
+    // Accumulate scroll delta
+    setScrollAccumulator(prev => prev + event.deltaY);
+    
+    // Set a new timeout to detect when scrolling has stopped
+    const timeout = setTimeout(() => {
+      // Check accumulated scroll amount
+      const threshold = 100; // Higher threshold for more deliberate swipes
+      
+      if (Math.abs(scrollAccumulator) > threshold) {
+        const shouldGoNext = scrollAccumulator > 0;
+        
+        if (shouldGoNext && nextChapter) {
+          setLastNavigationTime(Date.now());
+          router.push(nextChapter);
+        } else if (!shouldGoNext && prevChapter) {
+          setLastNavigationTime(Date.now());
+          router.push(prevChapter);
+        }
+      }
+      
+      // Reset accumulator
+      setScrollAccumulator(0);
+    }, 150); // Wait 150ms for gesture to complete
+    
+    setScrollTimeout(timeout);
+  }, [router, nextChapter, prevChapter, scrollAccumulator, scrollTimeout, lastNavigationTime]);
   
   // Set up navigation event listeners
   useEffect(() => {
@@ -74,7 +103,7 @@ export default function ChapterLayout({
   }, [handleKeyPress, handleWheel]);
   
   return (
-    <div className="fixed inset-0 flex bg-background" role="main">
+    <div className="fixed inset-0 flex bg-background page-enter" role="main">
       {/* Skip to content link for screen readers */}
       <a 
         href="#main-content" 
@@ -111,7 +140,7 @@ export default function ChapterLayout({
       <div className="flex-1 bg-gray-25 relative flex flex-row">
         
         {/* Content column */}
-        <div className="w-1/2 p-16 flex flex-col justify-center">
+        <div className="w-1/2 p-16 flex flex-col justify-center content-enter">
           <main 
             id="main-content"
             className="max-w-md"
@@ -130,7 +159,7 @@ export default function ChapterLayout({
         </div>
 
         {/* Animation column */}
-        <div className="w-1/2 flex items-center justify-center">
+        <div className="w-1/2 flex items-center justify-center animation-enter">
           <div aria-hidden="true" role="presentation">
             {animation}
           </div>
