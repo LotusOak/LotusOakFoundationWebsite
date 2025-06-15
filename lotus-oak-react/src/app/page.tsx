@@ -10,15 +10,20 @@ export default function Home() {
     >
       <h1 className="text-5xl font-serif mb-8">Lotus Oak Foundation</h1>
       <p className="text-xl text-secondary italic mb-12 max-w-2xl mx-auto">
-        Blending traditional philanthropy with innovative social venture approaches
+        Enabling transformative impact through values-aligned philanthropy and regenerative stewardship
       </p>
       
-      <div className="poetry text-lg max-w-xl mx-auto">
+      <div className="poetry text-lg max-w-xl mx-auto mb-8">
         The oak stands firm,<br />
         While the lotus blooms—it swiftly fades.<br /><br />
         Endurance and ephemerality,<br />
         A dance of strength and grace.
       </div>
+      
+      <p className="text-base text-muted max-w-lg mx-auto">
+        Every relationship begins with a conversation.<br />
+        Let us explore how your values can flourish through purposeful giving.
+      </p>
     </ChapterLayout>
   );
 }

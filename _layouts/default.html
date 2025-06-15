@@ -1,19 +1,50 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-  {%- include head.html -%}
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    {%- seo -%}
+    
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+    
+    {%- if jekyll.environment == 'production' and site.google_analytics -%}
+      {%- include google-analytics.html -%}
+    {%- endif -%}
+  </head>
 
   <body>
 
-    {%- include header.html -%}
-
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
+    <header class="site-header">
+      <div class="header-content">
+        <a href="/" class="site-title">{{ site.title }}</a>
+        
+        <nav class="main-nav">
+          <a href="/vision">Vision</a>
+          <a href="/team">Team</a>
+          <a href="/how-it-works">How It Works</a>
+          <a href="/blog">Blog</a>
+          <a href="/contact">Contact</a>
+        </nav>
       </div>
-    </main>
+    </header>
 
-    {%- include footer.html -%}
+    {{ content }}
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="poetry">
+          The oak stands firm, while the lotus blooms—<br>
+          Endurance and ephemerality, a dance of strength and grace.
+        </div>
+        
+        <p>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+        <p class="quiet">© {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+      </div>
+    </footer>
 
   </body>
 

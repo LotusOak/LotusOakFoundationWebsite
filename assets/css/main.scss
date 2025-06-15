@@ -1,0 +1,390 @@
+---
+# The Way of Lotus Oak - A contemplative design
+---
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@300;400;500&display=swap');
+
+// Minimal color palette - inspired by contemplative simplicity
+:root {
+  // Primary colors - very restrained
+  --text-primary: #2a2a2a;
+  --text-secondary: #666666;
+  --text-muted: #999999;
+  --background: #fefefe;
+  --background-soft: #f9f9f9;
+  --accent: #3a5f4a;          // Deep sage for rare accents
+  --accent-light: #e8f0ea;    // Very subtle accent background
+  --border: #e5e5e5;
+  
+  // Typography
+  --font-primary: 'Crimson Text', serif;
+  --font-secondary: 'Inter', sans-serif;
+  
+  // Spacing - generous like The Way of Code
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 8rem;
+  
+  // Layout constraints
+  --content-width: 640px;     // Narrow for contemplative reading
+  --wide-width: 800px;        // Slightly wider for special content
+  --max-width: 1000px;        // Maximum ever
+}
+
+// Reset with literary focus
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 18px;            // Larger base for comfortable reading
+  line-height: 1.7;           // Generous line height
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  color: var(--text-primary);
+  background-color: var(--background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Typography - literary and contemplative
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: var(--space-lg);
+  color: var(--text-primary);
+  text-align: center;         // Center headings like The Way of Code
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-2xl);
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: var(--space-xl);
+  margin-top: var(--space-3xl);
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-bottom: var(--space-lg);
+  margin-top: var(--space-2xl);
+}
+
+h4 {
+  font-size: 1.2rem;
+  margin-bottom: var(--space-md);
+  margin-top: var(--space-xl);
+}
+
+p {
+  margin-bottom: var(--space-lg);
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text-primary);
+  max-width: 100%;
+}
+
+// Poetry and philosophical text - central to the design
+.poetry {
+  font-family: var(--font-primary);
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 2;
+  color: var(--text-secondary);
+  text-align: center;
+  margin: var(--space-3xl) auto;
+  max-width: var(--content-width);
+  padding: var(--space-xl) 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+// Links - minimal and literary
+a {
+  color: var(--text-primary);
+  text-decoration: underline;
+  text-decoration-color: var(--text-muted);
+  text-underline-offset: 0.2em;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    text-decoration-color: var(--accent);
+    color: var(--accent);
+  }
+}
+
+// Layout containers - generous whitespace
+.container {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+  
+  &.wide {
+    max-width: var(--wide-width);
+  }
+  
+  &.full {
+    max-width: var(--max-width);
+  }
+}
+
+.section {
+  padding: var(--space-4xl) 0;
+  
+  &.compact {
+    padding: var(--space-2xl) 0;
+  }
+}
+
+// Header - minimal and unobtrusive
+.site-header {
+  background: var(--background);
+  border-bottom: 1px solid var(--border);
+  padding: var(--space-lg) 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+  background-color: rgba(254, 254, 254, 0.95);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+.site-title {
+  font-family: var(--font-primary);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-decoration: none;
+  
+  &:hover {
+    color: var(--accent);
+  }
+}
+
+.main-nav {
+  font-family: var(--font-secondary);
+  font-size: 0.9rem;
+  
+  a {
+    margin-left: var(--space-lg);
+    font-weight: 400;
+    color: var(--text-secondary);
+    text-decoration: none;
+    
+    &:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+  }
+}
+
+// Hero section - literary introduction
+.hero {
+  padding: var(--space-4xl) 0;
+  text-align: center;
+  background: var(--background);
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: var(--space-lg);
+  color: var(--text-primary);
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-2xl);
+  font-style: italic;
+  max-width: var(--wide-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Content sections
+.content-section {
+  text-align: left;
+  
+  &.centered {
+    text-align: center;
+  }
+}
+
+// Special text treatments
+.large-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-primary);
+}
+
+.emphasis {
+  font-style: italic;
+  color: var(--accent);
+}
+
+.quiet {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+// Buttons - minimal and text-like
+.btn {
+  display: inline-block;
+  padding: var(--space-sm) var(--space-lg);
+  font-family: var(--font-secondary);
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  border: 1px solid var(--border);
+  background: var(--background);
+  color: var(--text-primary);
+  transition: all 0.2s ease;
+  margin: 0 var(--space-xs);
+  
+  &:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: var(--accent-light);
+  }
+  
+  &.primary {
+    background: var(--accent);
+    color: var(--background);
+    border-color: var(--accent);
+    
+    &:hover {
+      background: var(--text-primary);
+      border-color: var(--text-primary);
+    }
+  }
+}
+
+// Card-like content blocks - very subtle
+.content-block {
+  margin: var(--space-2xl) 0;
+  padding: var(--space-xl);
+  background: var(--background-soft);
+  border: 1px solid var(--border);
+  
+  h3, h4 {
+    text-align: left;
+    margin-top: 0;
+  }
+}
+
+// Footer - minimal
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: var(--space-3xl) 0 var(--space-xl);
+  background: var(--background-soft);
+  text-align: center;
+  margin-top: var(--space-4xl);
+  
+  .poetry {
+    border: none;
+    margin: var(--space-lg) auto;
+    font-size: 0.9rem;
+  }
+  
+  p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: var(--space-sm);
+  }
+}
+
+// Special elements
+.divider {
+  width: 100px;
+  height: 1px;
+  background: var(--border);
+  margin: var(--space-3xl) auto;
+}
+
+.chapter-number {
+  font-family: var(--font-secondary);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: var(--space-md);
+  text-align: center;
+}
+
+// Responsive design - maintain contemplative feel
+@media (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+  
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  
+  .container {
+    padding: 0 var(--space-md);
+  }
+  
+  .main-nav {
+    display: none; // Hide nav on mobile for simplicity
+  }
+  
+  .section {
+    padding: var(--space-2xl) 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.8rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  .container {
+    padding: 0 var(--space-sm);
+  }
+}
+
+// Print styles - important for a literary site
+@media print {
+  .site-header,
+  .site-footer,
+  .btn {
+    display: none;
+  }
+  
+  .hero {
+    page-break-after: always;
+  }
+  
+  .section {
+    page-break-inside: avoid;
+  }
+}

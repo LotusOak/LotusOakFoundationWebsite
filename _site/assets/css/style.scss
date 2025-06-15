@@ -1,0 +1,111 @@
+@import "{{ site.theme }}";
+
+// Enhanced Navigation Styles
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  
+  .trigger {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    
+    .dropbtn {
+      background: none;
+      color: #111;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      font-family: inherit;
+      font-weight: 500;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 180px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      left: 0;
+      top: 100%;
+      border-radius: 0 0 6px 6px;
+      overflow: hidden;
+      
+      a {
+        color: #111;
+        padding: 12px 18px;
+        text-decoration: none;
+        display: block;
+        background: none;
+        transition: background 0.2s;
+        
+        &:hover {
+          background-color: #f1f1f1;
+        }
+      }
+    }
+    
+    &:hover .dropdown-content,
+    .dropbtn:focus + .dropdown-content {
+      display: block;
+    }
+  }
+  
+  .page-link {
+    color: #111;
+    padding: 16px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background 0.2s;
+    border: none;
+    background: none;
+    display: inline-block;
+    
+    &:hover {
+      background-color: #f1f1f1;
+    }
+  }
+}
+
+// Responsive Navigation
+@media screen and (max-width: 600px) {
+  .site-nav {
+    position: absolute;
+    top: 9px;
+    right: 15px;
+    background-color: #fdfdfd;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    text-align: right;
+    
+    .dropdown {
+      display: block;
+      padding: 5px 10px;
+      
+      .dropdown-content {
+        position: static;
+        display: none;
+        box-shadow: none;
+        
+        a {
+          padding: 5px 10px;
+        }
+      }
+      
+      &:hover .dropdown-content {
+        display: block;
+      }
+    }
+  }
+} 
