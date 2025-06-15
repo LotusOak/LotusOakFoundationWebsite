@@ -9,28 +9,26 @@ export default function Chapter01() {
       prevChapter="/"
       nextChapter="/chapter-02"
     >
-      <h2 className="text-3xl font-serif mb-6">The Lotus Oak Philosophy</h2>
+      <div className="text-block">The Lotus Oak Philosophy</div>
       
-      <p className="text-lg leading-relaxed mb-6 max-w-2xl mx-auto">
+      <div className="text-block">
         We draw inspiration from two ancient symbols that represent the wholeness 
         of human wisdom and natural resilience.
-      </p>
-      
-      <div className="space-y-4 max-w-2xl mx-auto text-left mb-6">
-        <p className="text-base">
-          <span className="font-serif italic text-accent">The Oak</span> — 
-          Represents endurance, strength, and deep roots. The masculine principle 
-          of stability and long-term thinking that guides sustainable stewardship.
-        </p>
-        
-        <p className="text-base">
-          <span className="font-serif italic text-lotus">The Lotus</span> — 
-          Embodies grace, beauty, and transformation. The feminine principle 
-          of adaptability and renewal that inspires innovative approaches.
-        </p>
       </div>
       
-      <div className="poetry text-lg max-w-xl mx-auto">
+      <div className="text-block">
+        The Oak — 
+        Represents endurance, strength, and deep roots. The masculine principle 
+        of stability and long-term thinking that guides sustainable stewardship.
+      </div>
+      
+      <div className="text-block">
+        The Lotus — 
+        Embodies grace, beauty, and transformation. The feminine principle 
+        of adaptability and renewal that inspires innovative approaches.
+      </div>
+      
+      <div className="text-block">
         Neither wholly masculine nor feminine,<br />
         Their virtues transcend boundaries.<br /><br />
         Rooted in the wisdom of ages,<br />

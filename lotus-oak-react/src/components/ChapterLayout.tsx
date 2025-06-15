@@ -73,7 +73,7 @@ export default function ChapterLayout({
   }, [handleKeyPress]);
   
   return (
-    <div className="fixed inset-0 flex flex-col bg-background" role="main">
+    <div className="fixed inset-0 flex bg-background" role="main">
       {/* Skip to content link for screen readers */}
       <a 
         href="#main-content" 
@@ -82,98 +82,83 @@ export default function ChapterLayout({
         Skip to content
       </a>
       
-      {/* Header with chapter number */}
-      <header className="absolute top-8 left-0 right-0 z-10">
-        <div className="container-full">
-          <div className="chapter-number text-center" aria-label={`Chapter ${chapterNumber}`}>
-            {chapterNumber}
+      {/* Vertical numbering system - Rick Rubin style */}
+      <div className="w-16 bg-gray-50 flex flex-col items-center pt-8">
+        {[
+          { num: 'intro', label: '00' },
+          { num: '01', label: '01' },
+          { num: '02', label: '02' },
+          { num: '03', label: '03' },
+          { num: '04', label: '04' },
+          { num: '05', label: '05' }
+        ].map(({ num, label }) => (
+          <div
+            key={num}
+            className={`text-xs text-gray-400 mb-6 ${
+              chapterNumber === num 
+                ? 'text-gray-800 font-medium' 
+                : ''
+            }`}
+          >
+            {label}
+          </div>
+        ))}
+      </div>
+      
+      {/* Main content area with subtle background */}
+      <div className="flex-1 bg-gray-25 relative flex">
+        
+        {/* Content column */}
+        <div className="w-1/2 p-16 flex flex-col justify-center">
+          <main 
+            id="main-content"
+            className="space-y-8"
+            tabIndex={-1}
+          >
+            {/* Chapter number in content */}
+            <div className="text-gray-400 text-sm">
+              {chapterNumber === 'intro' ? '00' : chapterNumber}
+            </div>
+            
+            {/* Content */}
+            <div className="space-y-6">
+              {children}
+            </div>
+          </main>
+        </div>
+
+        {/* Animation column */}
+        <div className="w-1/2 flex items-center justify-center">
+          <div aria-hidden="true" role="presentation">
+            {animation}
           </div>
         </div>
-      </header>
-
-      {/* Fixed animation area - always in the same spot */}
-      <div 
-        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0"
-        aria-hidden="true"
-        role="presentation"
-      >
-        {animation}
       </div>
 
-      {/* Content overlay - text on top of animation */}
-      <main 
-        id="main-content"
-        className="relative z-10 flex-1 flex items-center justify-center"
-        tabIndex={-1}
-      >
-        <div className="container-content text-center">
-          {children}
-        </div>
-      </main>
-
-      {/* Navigation */}
-      <nav className="absolute bottom-8 left-0 right-0 z-10" aria-label="Chapter navigation">
-        <div className="container-full flex justify-between items-center">
+      {/* Minimal navigation at bottom */}
+      <nav className="absolute bottom-8 left-20 right-8 z-10" aria-label="Chapter navigation">
+        <div className="flex justify-between items-center text-xs text-gray-400">
           {prevChapter ? (
             <Link 
               href={prevChapter} 
-              className="text-sm text-muted hover:text-accent focus:text-accent transition-all duration-300 hover:transform hover:-translate-y-1 focus:transform focus:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-50 rounded px-2 py-1"
-              aria-label={`Go to previous chapter`}
+              className="hover:text-gray-600 transition-colors"
             >
-              ← Previous
+              ←
             </Link>
           ) : (
             <div />
           )}
-          
-          <Link 
-            href="/" 
-            className="text-sm text-muted hover:text-accent focus:text-accent transition-all duration-300 hover:transform hover:-translate-y-1 focus:transform focus:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-50 rounded px-2 py-1"
-            aria-label="Go to homepage"
-          >
-            Home
-          </Link>
           
           {nextChapter ? (
             <Link 
               href={nextChapter} 
-              className="text-sm text-muted hover:text-accent focus:text-accent transition-all duration-300 hover:transform hover:-translate-y-1 focus:transform focus:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-50 rounded px-2 py-1"
-              aria-label={`Go to next chapter`}
+              className="hover:text-gray-600 transition-colors"
             >
-              Next →
+              →
             </Link>
           ) : (
             <div />
           )}
-        </div>
-      </nav>
-
-      {/* Side navigation dots - desktop */}
-      <nav 
-        className="fixed left-4 md:left-8 top-1/2 transform -translate-y-1/2 z-20"
-        aria-label="Chapter quick navigation"
-      >
-        <div className="flex flex-col gap-4">
-          {[
-            { num: 'intro', label: 'Introduction' },
-            { num: '01', label: 'Philosophy' },
-            { num: '02', label: 'Mission' },
-            { num: '03', label: 'Focus Areas' },
-            { num: '04', label: 'Approach' },
-            { num: '05', label: 'Future Vision' }
-          ].map(({ num, label }) => (
-            <Link
-              key={num}
-              href={num === 'intro' ? '/' : `/chapter-${num}`}
-              className={`nav-dot focus:outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-50 ${
-                chapterNumber === num 
-                  ? 'active' 
-                  : 'inactive'
-              }`}
-              aria-label={`${label} (Chapter ${num})`}
-              aria-current={chapterNumber === num ? 'page' : undefined}
-            />
-          ))}
         </div>
       </nav>
     </div>

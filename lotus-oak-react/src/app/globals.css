@@ -7,6 +7,9 @@
 :root {
   --background: #fefefe;
   --foreground: #2a2a2a;
+  --gray-25: #fcfcfc;
+  --gray-50: #f9f9f9;
+  --gray-100: #f3f3f3;
 }
 
 @layer base {
@@ -32,49 +35,20 @@
     padding: 0;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  /* Master craftsman typography - uniform throughout */
+  h1, h2, h3, h4, h5, h6, p, div, span {
     font-family: 'Crimson Text', serif;
-    font-weight: 600;
-    line-height: 1.3;
-    text-align: center;
-    color: #2a2a2a;
-    transition: all 0.3s ease;
-    cursor: default;
-  }
-
-  h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
-    color: #3a5f4a;
-    transform: translateY(-1px);
-  }
-
-  h1 {
-    font-size: 2.5rem;
-    letter-spacing: -0.01em;
-  }
-
-  h2 {
-    font-size: 1.8rem;
-    margin-top: 0;
-    margin-bottom: 2rem;
-  }
-
-  h3 {
-    font-size: 1.4rem;
-    margin-top: 0;
-    margin-bottom: 1.5rem;
-  }
-
-  p {
-    margin-bottom: 1.5rem;
-    font-size: 1rem;
+    font-weight: 400;
+    font-size: 1.125rem;
     line-height: 1.8;
     color: #2a2a2a;
-    transition: color 0.2s ease;
-    cursor: default;
+    margin: 0;
+    padding: 0;
   }
 
-  p:hover {
-    color: #3a5f4a;
+  /* Uniform spacing */
+  .text-block {
+    margin-bottom: 1.8rem;
   }
 
   a {
@@ -219,6 +193,19 @@
 
   .font-sans {
     font-family: 'Inter', sans-serif;
+  }
+
+  /* Master craftsman colors */
+  .bg-gray-25 {
+    background-color: var(--gray-25);
+  }
+
+  .bg-gray-50 {
+    background-color: var(--gray-50);
+  }
+
+  .bg-gray-100 {
+    background-color: var(--gray-100);
   }
 
   /* Accessibility utilities */

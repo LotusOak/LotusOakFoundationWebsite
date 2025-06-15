@@ -10,17 +10,17 @@ export default function Home() {
       nextChapter="/chapter-01"
     >
       <FadeInStagger delay={200}>
-        <h1 className="text-5xl font-serif mb-6">Lotus Oak Foundation</h1>
+        <div className="text-block">Lotus Oak Foundation</div>
       </FadeInStagger>
       
       <FadeInStagger delay={400}>
-        <p className="text-xl text-secondary italic mb-8 max-w-2xl mx-auto">
-          Enabling transformative impact through values-aligned philanthropy and regenerative stewardship
-        </p>
+        <div className="text-block">
+          Enabling transformative impact through values-aligned philanthropy and regenerative stewardship.
+        </div>
       </FadeInStagger>
       
       <FadeInStagger delay={600}>
-        <div className="poetry text-lg max-w-xl mx-auto mb-6">
+        <div className="text-block">
           The oak stands firm,<br />
           While the lotus blooms—it swiftly fades.<br /><br />
           Endurance and ephemerality,<br />
@@ -29,10 +29,10 @@ export default function Home() {
       </FadeInStagger>
       
       <FadeInStagger delay={800}>
-        <p className="text-base text-muted max-w-lg mx-auto">
+        <div className="text-block">
           Every relationship begins with a conversation.<br />
           Let us explore how your values can flourish through purposeful giving.
-        </p>
+        </div>
       </FadeInStagger>
     </ChapterLayout>
   );

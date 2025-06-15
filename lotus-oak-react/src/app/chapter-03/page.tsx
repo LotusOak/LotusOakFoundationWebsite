@@ -9,45 +9,35 @@ export default function Chapter03() {
       prevChapter="/chapter-02"
       nextChapter="/chapter-04"
     >
-      <h2 className="text-3xl font-serif mb-6">Focus Areas</h2>
+      <div className="text-block">Focus Areas</div>
       
-      <p className="text-lg leading-relaxed mb-6 max-w-2xl mx-auto">
+      <div className="text-block">
         We support transformative initiatives across four interconnected domains, 
         each essential for thriving communities and a regenerative future.
-      </p>
+      </div>
       
-      <div className="grid grid-cols-2 gap-8 max-w-3xl mx-auto text-left">
-        <div>
-          <h3 className="font-serif text-xl mb-3 text-accent">Education</h3>
-          <p className="text-sm text-secondary leading-relaxed">
-            Fostering learning environments that honor diverse ways of knowing, 
-            supporting educational innovation, and cultivating wisdom across generations.
-          </p>
-        </div>
-        
-        <div>
-          <h3 className="font-serif text-xl mb-3 text-accent">Healthcare</h3>
-          <p className="text-sm text-secondary leading-relaxed">
-            Supporting integrative and holistic health solutions that bridge 
-            traditional healing wisdom with modern medical innovation.
-          </p>
-        </div>
-        
-        <div>
-          <h3 className="font-serif text-xl mb-3 text-accent">Environmental Conservation</h3>
-          <p className="text-sm text-secondary leading-relaxed">
-            Protecting and restoring ecological systems through regenerative practices 
-            that heal the land and support biodiversity.
-          </p>
-        </div>
-        
-        <div>
-          <h3 className="font-serif text-xl mb-3 text-accent">Cultural Renewal</h3>
-          <p className="text-sm text-secondary leading-relaxed">
-            Preserving cultural heritage while fostering innovation, strengthening 
-            community bonds, and celebrating diverse traditions.
-          </p>
-        </div>
+      <div className="text-block">
+        Education — 
+        Fostering learning environments that honor diverse ways of knowing, 
+        supporting educational innovation, and cultivating wisdom across generations.
+      </div>
+      
+      <div className="text-block">
+        Healthcare — 
+        Supporting integrative and holistic health solutions that bridge 
+        traditional healing wisdom with modern medical innovation.
+      </div>
+      
+      <div className="text-block">
+        Environmental Conservation — 
+        Protecting and restoring ecological systems through regenerative practices 
+        that heal the land and support biodiversity.
+      </div>
+      
+      <div className="text-block">
+        Cultural Renewal — 
+        Preserving cultural heritage while fostering innovation, strengthening 
+        community bonds, and celebrating diverse traditions.
       </div>
     </ChapterLayout>
   );
