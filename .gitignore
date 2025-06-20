@@ -9,6 +9,9 @@
 # next.js
 /.next/
 /out/
+lotus-oak-react/.next/
+lotus-oak-react/node_modules/
+lotus-oak-react/out/
 
 # production
 /build
