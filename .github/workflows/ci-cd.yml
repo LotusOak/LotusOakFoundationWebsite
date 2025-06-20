@@ -1,0 +1,237 @@
+name: Foundation Website CI/CD
+# CI/CD pipeline for Lotus Oak Foundation Website using reusable workflows
+
+on:
+  push:
+    branches:
+      - main
+      - staging
+      - dev
+  pull_request:
+    branches:
+      - main
+      - staging
+  workflow_dispatch:
+    inputs:
+      deploy_environment:
+        description: 'Environment to deploy to'
+        required: false
+        type: choice
+        options:
+          - none
+          - staging
+          - production
+
+# Set permissions for GITHUB_TOKEN
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+  pull-requests: write
+  security-events: write
+
+# Cancel in-progress runs for the same workflow
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # Run CI checks using reusable workflow
+  ci:
+    name: CI Pipeline
+    uses: LotusOak/root/.github/workflows/shared/org-ci.yml@root
+    with:
+      language: ruby
+      project_path: .
+      ruby_version: '3.2'
+      test_command: 'bundle exec jekyll build --strict_front_matter'
+      build_command: 'bundle exec jekyll build'
+      coverage_threshold: 0  # Static site, no code coverage needed
+      lint_command: 'bundle exec jekyll doctor'
+
+  # Run security scans using reusable workflow
+  security:
+    name: Security Scanning
+    uses: LotusOak/root/.github/workflows/shared/security-scan.yml@root
+    with:
+      project_path: .
+      enable_container_scan: false  # No containers for static site
+      enable_codeql: true
+      enable_dependency_scan: true
+      enable_secret_scan: true
+
+  # Deploy to staging environment
+  deploy-staging:
+    name: Deploy to Staging
+    needs: [ci, security]
+    if: |
+      github.event_name == 'push' && 
+      github.ref == 'refs/heads/staging' ||
+      (github.event_name == 'workflow_dispatch' && github.event.inputs.deploy_environment == 'staging')
+    uses: LotusOak/root/.github/workflows/shared/deploy.yml@root
+    with:
+      environment: staging
+      project_name: lotusoakfoundation-website
+      project_path: .
+      deployment_type: static
+      health_check_url: https://staging.lotusoakfoundation.org
+      rollback_on_failure: true
+    secrets: inherit
+
+  # Deploy to production environment
+  deploy-production:
+    name: Deploy to Production
+    needs: [ci, security]
+    if: |
+      github.event_name == 'push' && 
+      github.ref == 'refs/heads/main' ||
+      (github.event_name == 'workflow_dispatch' && github.event.inputs.deploy_environment == 'production')
+    uses: LotusOak/root/.github/workflows/shared/deploy.yml@root
+    with:
+      environment: production
+      project_name: lotusoakfoundation-website
+      project_path: .
+      deployment_type: static
+      health_check_url: https://lotusoakfoundation.org
+      rollback_on_failure: true
+    secrets: inherit
+
+  # GitHub Pages deployment (alternative/backup)
+  deploy-pages:
+    name: Deploy to GitHub Pages
+    needs: [ci, security]
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+      
+      - name: Build with Jekyll
+        run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+      
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '_site'
+      
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  # Summary job for pull requests
+  pr-summary:
+    name: PR Summary
+    needs: [ci, security]
+    if: github.event_name == 'pull_request' && always()
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Generate PR comment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const ciResult = '${{ needs.ci.result }}';
+            const securityResult = '${{ needs.security.result }}';
+            
+            let comment = '## Foundation Website CI/CD Summary\n\n';
+            comment += '| Check | Status |\n';
+            comment += '| --- | --- |\n';
+            comment += `| CI Pipeline | ${ciResult === 'success' ? '✅ Passed' : '❌ Failed'} |\n`;
+            comment += `| Security Scanning | ${securityResult === 'success' ? '✅ Passed' : '❌ Failed'} |\n`;
+            comment += '\n';
+            
+            if (ciResult === 'success' && securityResult === 'success') {
+              comment += '✅ **All checks passed!** This PR is ready for review.\n';
+            } else {
+              comment += '❌ **Some checks failed.** Please review the workflow logs for details.\n';
+            }
+            
+            comment += '\n### Next Steps\n';
+            comment += '1. Review the changes\n';
+            comment += '2. Approve the PR if everything looks good\n';
+            comment += '3. Merge to trigger deployment\n';
+            
+            // Find existing comment
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+            });
+            
+            const botComment = comments.find(comment => 
+              comment.user.type === 'Bot' && 
+              comment.body.includes('Foundation Website CI/CD Summary')
+            );
+            
+            if (botComment) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: botComment.id,
+                body: comment
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body: comment
+              });
+            }
+
+  # Workflow summary
+  summary:
+    name: Workflow Summary
+    needs: [ci, security, deploy-staging, deploy-production, deploy-pages]
+    if: always()
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Generate summary
+        run: |
+          echo "## Foundation Website Pipeline Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Build Information" >> $GITHUB_STEP_SUMMARY
+          echo "- **Triggered by**: ${{ github.event_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Branch**: ${{ github.ref_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Commit**: ${{ github.sha }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          echo "### Pipeline Status" >> $GITHUB_STEP_SUMMARY
+          echo "| Stage | Result |" >> $GITHUB_STEP_SUMMARY
+          echo "| --- | --- |" >> $GITHUB_STEP_SUMMARY
+          echo "| CI Pipeline | ${{ needs.ci.result }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Security Scanning | ${{ needs.security.result }} |" >> $GITHUB_STEP_SUMMARY
+          
+          if [ "${{ needs.deploy-staging.result }}" != "skipped" ]; then
+            echo "| Staging Deployment | ${{ needs.deploy-staging.result }} |" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          if [ "${{ needs.deploy-production.result }}" != "skipped" ]; then
+            echo "| Production Deployment | ${{ needs.deploy-production.result }} |" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          if [ "${{ needs.deploy-pages.result }}" != "skipped" ]; then
+            echo "| GitHub Pages Deployment | ${{ needs.deploy-pages.result }} |" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Deployment URLs" >> $GITHUB_STEP_SUMMARY
+          echo "- **Production**: https://lotusoakfoundation.org" >> $GITHUB_STEP_SUMMARY
+          echo "- **Staging**: https://staging.lotusoakfoundation.org" >> $GITHUB_STEP_SUMMARY
+          echo "- **GitHub Pages**: https://lotusoakfoundation.github.io" >> $GITHUB_STEP_SUMMARY
