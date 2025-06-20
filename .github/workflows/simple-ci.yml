@@ -3,7 +3,7 @@ name: Foundation Website Simple CI
 
 on:
   push:
-    branches: [main, staging, dev, fix/simplify-ci-workflow]
+    branches: [main, staging, dev]
   pull_request:
     branches: [main, staging]
   workflow_dispatch:
