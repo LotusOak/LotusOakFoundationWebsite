@@ -1,0 +1,127 @@
+name: Dependency Updates
+# Automated dependency updates using Dependabot and security scanning
+
+on:
+  schedule:
+    # Run every Monday at 9am UTC
+    - cron: '0 9 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  security-events: write
+
+jobs:
+  # Check for outdated dependencies
+  check-dependencies:
+    name: Check Dependencies
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+      
+      - name: Check for outdated gems
+        run: |
+          echo "## Dependency Status" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Ruby Gems" >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          bundle outdated || true
+          echo '```' >> $GITHUB_STEP_SUMMARY
+      
+      - name: Security audit
+        run: |
+          gem install bundler-audit
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Security Audit" >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          bundle-audit check --update || true
+          echo '```' >> $GITHUB_STEP_SUMMARY
+
+  # Run security scan on current dependencies
+  security-scan:
+    name: Security Scan
+    uses: LotusOak/root/.github/workflows/shared/security-scan.yml@root
+    with:
+      project_path: .
+      enable_container_scan: false
+
+  # Create summary issue if problems found
+  create-summary:
+    name: Create Summary
+    needs: [check-dependencies, security-scan]
+    if: always()
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Check if issue exists
+        id: check_issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'dependencies,automated'
+            });
+            
+            const existingIssue = issues.find(issue => 
+              issue.title.includes('Weekly Dependency Report')
+            );
+            
+            return existingIssue ? existingIssue.number : null;
+      
+      - name: Create or update issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const date = new Date().toISOString().split('T')[0];
+            const title = `Weekly Dependency Report - ${date}`;
+            const body = `## Weekly Dependency Report
+            
+            This is an automated report of dependency status and security issues.
+            
+            ### Status
+            - Dependency Check: ${{ needs.check-dependencies.result }}
+            - Security Scan: ${{ needs.security-scan.result }}
+            
+            ### Actions Required
+            - [ ] Review outdated dependencies
+            - [ ] Update critical security vulnerabilities
+            - [ ] Review and merge Dependabot PRs
+            
+            ### Resources
+            - [Workflow Run](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})
+            - [Security Advisories](https://github.com/${{ github.repository }}/security/advisories)
+            
+            ---
+            *This issue was automatically created by the dependency update workflow.*`;
+            
+            const issueNumber = ${{ steps.check_issue.outputs.result }};
+            
+            if (issueNumber) {
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issueNumber,
+                title: title,
+                body: body
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: title,
+                body: body,
+                labels: ['dependencies', 'automated', 'security']
+              });
+            }
