@@ -1,0 +1,182 @@
+name: Foundation Website Simple CI
+# Working CI pipeline for Jekyll static site
+
+on:
+  push:
+    branches: [main, staging, dev]
+  pull_request:
+    branches: [main, staging]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+  pull-requests: write
+
+jobs:
+  validate:
+    name: Jekyll Build & Validation
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+      
+      - name: Install dependencies
+        run: bundle install --jobs 4 --retry 3
+      
+      - name: Check Jekyll configuration
+        run: |
+          echo "## 🔧 Jekyll Configuration" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          if [ -f "_config.yml" ]; then
+            echo "- ✅ _config.yml found" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "- ❌ _config.yml missing" >> $GITHUB_STEP_SUMMARY
+            exit 1
+          fi
+          
+          if [ -f "Gemfile" ]; then
+            echo "- ✅ Gemfile found" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "- ❌ Gemfile missing" >> $GITHUB_STEP_SUMMARY
+            exit 1
+          fi
+      
+      - name: Build Jekyll site
+        run: |
+          echo "Building Jekyll site..." >> $GITHUB_STEP_SUMMARY
+          bundle exec jekyll build --strict_front_matter
+          
+          if [ -d "_site" ]; then
+            echo "- ✅ Site built successfully" >> $GITHUB_STEP_SUMMARY
+            echo "- 📁 Generated $(find _site -name "*.html" | wc -l) HTML files" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "- ❌ Site build failed" >> $GITHUB_STEP_SUMMARY
+            exit 1
+          fi
+      
+      - name: Run Jekyll doctor
+        run: |
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "## 🩺 Jekyll Doctor Report" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          if bundle exec jekyll doctor; then
+            echo "- ✅ No Jekyll issues found" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "- ⚠️ Jekyll doctor found issues" >> $GITHUB_STEP_SUMMARY
+          fi
+      
+      - name: Upload site artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: jekyll-site
+          path: _site/
+          retention-days: 7
+
+  security:
+    name: Basic Security Check
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Check for secrets
+        run: |
+          echo "## 🔒 Security Check" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          # Check for potential secrets in Jekyll files
+          if grep -r -i -E "(password|secret|key)\s*[:=]\s*['\"]?[a-zA-Z0-9]{8,}" --include="*.yml" --include="*.md" . | \
+             grep -v "example" | \
+             grep -v "placeholder" | \
+             grep -v "\`\`\`" | \
+             head -1; then
+            echo "⚠️ Potential secrets found - please review" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "✅ No obvious secrets detected" >> $GITHUB_STEP_SUMMARY
+          fi
+
+  deploy-pages:
+    name: Deploy to GitHub Pages
+    needs: [validate, security]
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    
+    steps:
+      - name: Download site artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: jekyll-site
+          path: _site
+      
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      
+      - name: Upload to Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  pr-summary:
+    name: PR Summary
+    needs: [validate, security]
+    if: github.event_name == 'pull_request' && always()
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Create summary comment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const validate = '${{ needs.validate.result }}';
+            const security = '${{ needs.security.result }}';
+            
+            let status = '✅';
+            let message = 'All checks passed!';
+            
+            if (validate !== 'success' || security !== 'success') {
+              status = '❌';
+              message = 'Some checks failed.';
+            }
+            
+            const comment = `## ${status} Foundation Website CI Summary
+            
+            | Check | Status |
+            |-------|--------|
+            | Jekyll Build & Validation | ${validate === 'success' ? '✅' : '❌'} |
+            | Security Check | ${security === 'success' ? '✅' : '❌'} |
+            
+            **Result**: ${message}
+            
+            ${validate === 'success' && security === 'success' ? 
+              '🎉 This PR is ready for review and deployment!' : 
+              '🔍 Please check the workflow logs for details.'}
+              
+            ${github.ref === 'refs/heads/main' && validate === 'success' ? 
+              '📡 **Deployment**: This will deploy to GitHub Pages when merged.' : 
+              ''}`;
+            
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: comment
+            });
